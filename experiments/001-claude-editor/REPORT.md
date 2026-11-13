@@ -112,3 +112,16 @@ Run on the seed-2 dev set of 64 problems at 4k, paired with base (call 7) and e0
   - On 0.8B, Astra's gains kept growing up to α=6. On 2B the lever saturates at roughly removing the direction.
   - e02 stays the final edit, and the MATH-500 numbers above stand.
 - **Not yet checked:** preservation on non-math tasks (Astra checked IFEval, MMLU-Pro and GPQA).
+
+## Preservation check (non-math), pre-registered in protocol.md
+| check | base | e02 | verdict |
+|---|---|---|---|
+| wikitext-2 test NLL, 64 chunks of 4k characters | 2.6703 | 2.6704 (+0.0002 nats/token; worst chunk +0.003) | **preserved** (limit was 0.02) |
+| MMLU-Pro non-math, thinking off, 512 questions, 2k cap | 188 (36.7%) | 196 (38.3%) | **preserved**: 26 wins / 18 losses, p=0.29 |
+| same, accuracy among questions answered | 49.6% (188/379) | 50.4% (196/389) | no change in knowledge |
+| MMLU-Pro non-math, thinking on, 128 questions, 4k cap | 6 | 12 | uninformative: base hits the cap 96% of the time (8 wins / 2 losses, p=0.11) |
+
+- **The edit doesn't measurably change general language modelling or stored knowledge.**
+- Its small positive drift on MMLU-Pro comes from more answers *finishing*: 389 vs 379 with thinking off, and 15 vs 7 with thinking on. That's the same commit-sooner effect seen on math.
+- Two changes were made to the thinking-off run before scoring, and both are logged in protocol.md: the cap went from 256 to 2048 tokens, and the grader accepts a bare letter.
+- IFEval was not run.

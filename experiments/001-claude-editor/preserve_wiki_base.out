@@ -1,0 +1,25 @@
+
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]
+Loading weights:   2%|▎         | 8/320 [00:00<00:07, 42.86it/s]
+Loading weights:   5%|▌         | 16/320 [00:00<00:05, 58.77it/s]
+Loading weights:  12%|█▎        | 40/320 [00:00<00:02, 123.69it/s]
+Loading weights:  17%|█▋        | 54/320 [00:00<00:03, 77.21it/s] 
+Loading weights:  25%|██▍       | 79/320 [00:00<00:02, 105.20it/s]
+Loading weights:  29%|██▉       | 94/320 [00:00<00:02, 111.09it/s]
+Loading weights:  33%|███▎      | 107/320 [00:01<00:02, 101.37it/s]
+Loading weights:  40%|███▉      | 127/320 [00:01<00:01, 108.82it/s]
+Loading weights:  43%|████▎     | 139/320 [00:01<00:01, 108.11it/s]
+Loading weights:  47%|████▋     | 151/320 [00:01<00:02, 78.84it/s] 
+Loading weights:  50%|█████     | 161/320 [00:01<00:02, 74.01it/s]
+Loading weights:  54%|█████▍    | 174/320 [00:01<00:01, 77.04it/s]
+Loading weights:  61%|██████    | 194/320 [00:02<00:01, 98.32it/s]
+Loading weights:  68%|██████▊   | 216/320 [00:02<00:00, 109.76it/s]
+Loading weights:  71%|███████▏  | 228/320 [00:02<00:00, 94.45it/s] 
+Loading weights: 100%|██████████| 320/320 [00:02<00:00, 128.48it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+MIOpen: Warning [ParseAndLoadDb] File is unreadable: "D:\\WeightSpace\\.venv\\Lib\\site-packages\\_rocm_sdk_libraries\\bin\\gfx120020.HIP.fdb.txt"
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+D:\WeightSpace\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py:174: UserWarning: Flash Efficient attention on Current AMD GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at B:/src/pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:439.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+D:\WeightSpace\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py:174: UserWarning: Mem Efficient attention on Current AMD GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at B:/src/pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:499.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(

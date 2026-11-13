@@ -70,3 +70,18 @@ So a run on 0.8B can't be blind. The main arm uses **Qwen3.5-2B**, which neither
   - **Strength sweep:** e05/e06/e07 = e02 at α = 2/4/6.
   - All run on the seed-2 dev set of 64 problems at 4k, paired with call 7 (base) and call 9 (e02). Budgeted.
   - **MATH-500 is spent.** If the sweep picks a new α, it gets a fresh held-out set: MATH *test* problems that are not in MATH-500, scored once, base vs e02 vs the new α.
+- 2026-11-13, preservation check (requested by the user), fixed before running. Base vs e02, unbudgeted, seed 0, run with `preserve.py`:
+  - **MMLU-Pro:** 128 non-math test questions (shuffled with seed 0), thinking on, 4k cap, graded by the boxed option letter.
+  - **wikitext-2 test:** teacher-forced NLL on 64 consecutive chunks of 4,000 characters.
+  - **"Preserved" means:**
+    - MMLU-Pro: losses don't significantly exceed wins (sign test, p<0.05).
+    - wikitext: mean NLL rises by less than 0.02 nats/token.
+  - IFEval is skipped because its grader needs Google's instruction-checker code.
+- 2026-11-13, after the thinking-on MMLU-Pro run and before running this addition:
+  - **Problem:** the thinking run hit the 4k cap on 96% of answers for base (123/128), so it is close to uninformative. The wikitext result stands as pre-registered.
+  - **Addition:** MMLU-Pro with thinking **off**, on the first 512 questions of the same seed-0 non-math shuffle. The prompt asks for only the boxed letter, with a 256-token cap. Base vs e02, same sign-test criterion.
+  - This checks stored knowledge directly, without the length confound.
+- 2026-11-13, change to the thinking-off check before it was scored:
+  - **Problem:** in the first 64-question chunk (base only), 42 of 64 answers reasoned past the 256-token cap without giving a letter, and many that did answer gave a bare letter with no box.
+  - **Fix 1:** stopped the run, deleted the partial base chunks and raised the cap to **2048**, so the check is about knowledge rather than length.
+  - **Fix 2:** for thinking-off answers only, the grader also accepts a leading letter or "answer is X" when there's no box. It is applied identically to base and e02. The thinking-on grading is unchanged.
