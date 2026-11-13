@@ -59,3 +59,18 @@ Running record of my reasoning, including wrong turns. Call numbers match `log.j
   - Against base: 11 wins, 1 loss (p≈0.006). Against e02: 3 wins, 2 losses, a wash.
   - Kept e02 under the rule set before the run: no clear margin, and twice the weights.
 - **Dev phase closed at 10/50 calls.** The held-out eval is pre-registered in protocol.md and started 2026-11-13, about 00:20. It should take about 11 h.
+
+## Follow-ups after reading Astra's trace (calls 11–14, seed-2 dev set of 64 at 4k)
+| edit | correct | vs base (W/L) | vs e02 (W/L) | Wait/1k | finished but wrong |
+|---|---|---|---|---|---|
+| base (call 7) | 19 | – | 1/10 | 2.43 | 0 |
+| e02 α=1 (call 9) | 28 | 10/1 p=.012 | – | 1.71 | 0 |
+| e04 random orthogonal, same columns and norm | 19 | 7/7 p=1 | 0/9 p=.004 | 2.12 | 0 |
+| e05 α=2 | 30 | 13/2 p=.007 | 5/3 | 1.64 | 0 |
+| e06 α=4 | 30 | 11/0 p=.001 | 5/3 | 2.24 | 0 |
+| e07 α=6 | 25 | 10/4 p=.18 | 4/7 | 3.33 | 0 |
+
+- **Control:** a same-sized perturbation of the same columns, in a random direction, does nothing. e02's gain belongs to the doubt direction.
+- **Strength:** the gain plateaus from α=1 to α=4 (+2 problems over e02, not significant) and drops at α=6. Wait/1k climbs back up from α=4, which looks like overshoot disruption. This is unlike Astra on 0.8B, where gains kept growing up to α=6. 2B's lever saturates at roughly "remove the direction".
+- **Decision:** keep e02 (α=1). The sweep picked no new α, so per protocol no new held-out set is needed. No setting produced a wrong finished answer.
+- **Budget:** 14/50.

@@ -65,3 +65,8 @@ So a run on 0.8B can't be blind. The main arm uses **Qwen3.5-2B**, which neither
     - Both models, sampling seed 0.
   - **Why 48 at 16k instead of ~100:** throughput measured at 16k is about 4.4 tok/s per slot, so 16 problems take about 1 h. 100 per model would take more than 6 h.
   - The held-out eval runs unbudgeted.
+- 2026-11-13, after the held-out eval, before the follow-ups. The user asked for the follow-ups that came out of reading Astra's trace:
+  - **Control e04:** the same columns and update norm as e02, but writing a random direction orthogonal to u.
+  - **Strength sweep:** e05/e06/e07 = e02 at α = 2/4/6.
+  - All run on the seed-2 dev set of 64 problems at 4k, paired with call 7 (base) and call 9 (e02). Budgeted.
+  - **MATH-500 is spent.** If the sweep picks a new α, it gets a fresh held-out set: MATH *test* problems that are not in MATH-500, scored once, base vs e02 vs the new α.

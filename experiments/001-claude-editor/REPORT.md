@@ -93,3 +93,22 @@ Source: Antigravity's `D:\WeightSpace\research\exp8-walkthrough.md`, traced from
 
   Both are needed before calling e02 a clean fix rather than a lucky perturbation.
 - **Scale comparison.** On 0.8B, where base 0.8B loops, Astra reached +40 pts on MATH-500. On 2B, which mostly commits slowly rather than looping, e02 gets +6.6 pts at 4k and +25 pts at 16k on 48 problems. The 0.8B → 9B result in the WSP-Scope paper (−0.35 pts Math) suggests gains shrink as models stop looping. 2B sits in between.
+
+## Follow-ups (calls 11–14, after the addendum)
+Run on the seed-2 dev set of 64 problems at 4k, paired with base (call 7) and e02 (call 9):
+- **Random-direction control (e04):** same layers, same 64 columns, same update norm, but writing a random direction orthogonal to the doubt direction.
+  - 19/64, identical to base: 7 wins, 7 losses vs base, and 0 wins / 9 losses vs e02 (p≈0.004).
+  - **e02's gain is specific to the direction.** It isn't "any perturbation".
+- **Strength sweep:**
+
+  | α | correct |
+  |---|---|
+  | 1 (e02) | 28 |
+  | 2 | 30 |
+  | 4 | 30 |
+  | 6 | 25 |
+
+  - The gain plateaus from α=1 to α=4 and declines at α=6, where "Wait" density rises back above base.
+  - On 0.8B, Astra's gains kept growing up to α=6. On 2B the lever saturates at roughly removing the direction.
+  - e02 stays the final edit, and the MATH-500 numbers above stand.
+- **Not yet checked:** preservation on non-math tasks (Astra checked IFEval, MMLU-Pro and GPQA).
