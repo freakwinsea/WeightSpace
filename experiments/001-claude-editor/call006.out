@@ -1,0 +1,24 @@
+
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]
+Loading weights:   1%|▏         | 4/320 [00:00<00:08, 37.04it/s]
+Loading weights:   5%|▍         | 15/320 [00:00<00:03, 76.41it/s]
+Loading weights:  10%|█         | 33/320 [00:00<00:03, 85.18it/s]
+Loading weights:  13%|█▎        | 42/320 [00:00<00:05, 54.08it/s]
+Loading weights:  17%|█▋        | 55/320 [00:00<00:03, 70.15it/s]
+Loading weights:  20%|██        | 64/320 [00:00<00:03, 72.68it/s]
+Loading weights:  25%|██▌       | 80/320 [00:01<00:02, 86.50it/s]
+Loading weights:  28%|██▊       | 90/320 [00:01<00:03, 71.62it/s]
+Loading weights:  31%|███       | 99/320 [00:01<00:03, 59.50it/s]
+Loading weights:  33%|███▎      | 106/320 [00:01<00:04, 51.11it/s]
+Loading weights:  36%|███▌      | 114/320 [00:01<00:03, 55.57it/s]
+Loading weights:  42%|████▎     | 136/320 [00:01<00:02, 76.26it/s]
+Loading weights:  45%|████▌     | 145/320 [00:02<00:02, 74.20it/s]
+Loading weights:  49%|████▉     | 158/320 [00:02<00:01, 84.24it/s]
+Loading weights:  52%|█████▏    | 167/320 [00:02<00:02, 67.99it/s]
+Loading weights: 100%|██████████| 320/320 [00:02<00:00, 130.21it/s]
+edit 383099 weights
+model.safetensors-00001-of-00001.safetensors: 3 tensors replaced
+llama-server on 127.0.0.1:8090
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+{"acc": 0.28125, "cut": 0.78125, "mean_tok": 3815.375, "mean_rep": 0.0171875, "seconds": 627, "n": 32}

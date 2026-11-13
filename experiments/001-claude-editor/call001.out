@@ -1,0 +1,28 @@
+
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]
+Loading weights:   2%|▏         | 6/320 [00:00<00:06, 46.92it/s]
+Loading weights:   3%|▎         | 11/320 [00:00<00:09, 31.10it/s]
+Loading weights:   6%|▌         | 19/320 [00:00<00:06, 43.96it/s]
+Loading weights:   9%|▉         | 29/320 [00:00<00:04, 60.05it/s]
+Loading weights:  11%|█▏        | 36/320 [00:00<00:04, 57.60it/s]
+Loading weights:  14%|█▍        | 45/320 [00:00<00:04, 64.97it/s]
+Loading weights:  18%|█▊        | 56/320 [00:00<00:03, 72.80it/s]
+Loading weights:  22%|██▎       | 72/320 [00:01<00:02, 96.20it/s]
+Loading weights:  26%|██▌       | 83/320 [00:01<00:03, 63.93it/s]
+Loading weights:  29%|██▉       | 92/320 [00:01<00:03, 63.65it/s]
+Loading weights:  33%|███▎      | 107/320 [00:01<00:02, 76.02it/s]
+Loading weights:  36%|███▋      | 116/320 [00:01<00:03, 61.58it/s]
+Loading weights:  39%|███▉      | 124/320 [00:01<00:03, 59.45it/s]
+Loading weights:  41%|████      | 131/320 [00:02<00:03, 53.93it/s]
+Loading weights:  43%|████▎     | 137/320 [00:02<00:04, 38.24it/s]
+Loading weights:  44%|████▍     | 142/320 [00:02<00:04, 39.96it/s]
+Loading weights:  46%|████▌     | 147/320 [00:02<00:04, 38.42it/s]
+Loading weights:  51%|█████▏    | 164/320 [00:02<00:03, 49.29it/s]
+Loading weights:  54%|█████▍    | 173/320 [00:03<00:02, 52.44it/s]
+Loading weights:  59%|█████▉    | 190/320 [00:03<00:01, 65.37it/s]
+Loading weights:  62%|██████▎   | 200/320 [00:03<00:01, 65.30it/s]
+Loading weights: 100%|██████████| 320/320 [00:03<00:00, 92.14it/s]
+llama-server on 127.0.0.1:8090
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+{"acc": 0.15625, "cut": 0.90625, "mean_tok": 3956.78125, "mean_rep": 0.011625000000000002, "seconds": 624, "n": 32}

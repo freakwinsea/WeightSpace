@@ -1,0 +1,25 @@
+
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]
+Loading weights:   2%|▏         | 5/320 [00:00<00:06, 46.15it/s]
+Loading weights:   5%|▌         | 16/320 [00:00<00:03, 78.86it/s]
+Loading weights:  10%|█         | 33/320 [00:00<00:02, 117.82it/s]
+Loading weights:  14%|█▍        | 45/320 [00:00<00:04, 55.81it/s] 
+Loading weights:  18%|█▊        | 59/320 [00:00<00:03, 67.76it/s]
+Loading weights:  22%|██▏       | 70/320 [00:01<00:03, 68.99it/s]
+Loading weights:  25%|██▍       | 79/320 [00:01<00:03, 73.05it/s]
+Loading weights:  30%|███       | 96/320 [00:01<00:02, 93.06it/s]
+Loading weights:  34%|███▍      | 109/320 [00:01<00:02, 98.36it/s]
+Loading weights:  38%|███▊      | 120/320 [00:01<00:02, 82.83it/s]
+Loading weights:  41%|████      | 130/320 [00:01<00:02, 85.84it/s]
+Loading weights:  44%|████▍     | 140/320 [00:01<00:02, 85.99it/s]
+Loading weights:  47%|████▋     | 150/320 [00:01<00:01, 87.28it/s]
+Loading weights:  50%|█████     | 160/320 [00:02<00:02, 74.21it/s]
+Loading weights:  57%|█████▊    | 184/320 [00:02<00:01, 101.60it/s]
+Loading weights:  61%|██████    | 195/320 [00:02<00:01, 95.37it/s] 
+Loading weights:  64%|██████▍   | 205/320 [00:02<00:01, 77.30it/s]
+Loading weights: 100%|██████████| 320/320 [00:02<00:00, 125.95it/s]
+edit 383099 weights
+llama-server on 127.0.0.1:8090
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+{"acc": 0.4375, "cut": 0.59375, "mean_tok": 3399.4375, "mean_rep": 0.011718750000000007, "seconds": 1202, "n": 64}

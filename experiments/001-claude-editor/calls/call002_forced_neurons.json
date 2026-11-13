@@ -1,0 +1,953 @@
+{
+ "cands": [
+  [
+   15,
+   1958,
+   -0.262
+  ],
+  [
+   16,
+   2431,
+   -0.507
+  ],
+  [
+   17,
+   873,
+   0.431
+  ],
+  [
+   18,
+   3368,
+   0.43
+  ],
+  [
+   18,
+   3801,
+   -0.398
+  ],
+  [
+   20,
+   3748,
+   0.338
+  ],
+  [
+   22,
+   5041,
+   0.478
+  ]
+ ],
+ "rows": [
+  {
+   "id": "train/precalculus/7272",
+   "cut": false,
+   "ok": true,
+   "n_wait": 0,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": 0.0119,
+     "mean_before_wait": null,
+     "mean_other": 0.0119,
+     "frac_pos": 0.562
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": 0.0472,
+     "mean_before_wait": null,
+     "mean_other": 0.0472,
+     "frac_pos": 0.792
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": 0.0049,
+     "mean_before_wait": null,
+     "mean_other": 0.0049,
+     "frac_pos": 0.543
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0966,
+     "mean_before_wait": null,
+     "mean_other": -0.0966,
+     "frac_pos": 0.147
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0285,
+     "mean_before_wait": null,
+     "mean_other": 0.0285,
+     "frac_pos": 0.632
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.0815,
+     "mean_before_wait": null,
+     "mean_other": -0.0815,
+     "frac_pos": 0.196
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.2401,
+     "mean_before_wait": null,
+     "mean_other": -0.2401,
+     "frac_pos": 0.059
+    }
+   }
+  },
+  {
+   "id": "train/algebra/281",
+   "cut": false,
+   "ok": true,
+   "n_wait": 6,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": -0.0378,
+     "mean_before_wait": 0.0025,
+     "mean_other": -0.0379,
+     "frac_pos": 0.362
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.1069,
+     "mean_before_wait": -4.5078,
+     "mean_other": -0.0997,
+     "frac_pos": 0.716
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": 0.0326,
+     "mean_before_wait": -1.0995,
+     "mean_other": 0.0344,
+     "frac_pos": 0.666
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0931,
+     "mean_before_wait": -0.1619,
+     "mean_other": -0.093,
+     "frac_pos": 0.193
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.02,
+     "mean_before_wait": -0.117,
+     "mean_other": 0.0202,
+     "frac_pos": 0.573
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.1121,
+     "mean_before_wait": -1.1942,
+     "mean_other": -0.1103,
+     "frac_pos": 0.145
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.2519,
+     "mean_before_wait": -4.4531,
+     "mean_other": -0.245,
+     "frac_pos": 0.082
+    }
+   }
+  },
+  {
+   "id": "train/algebra/1183",
+   "cut": false,
+   "ok": true,
+   "n_wait": 1,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": -0.0339,
+     "mean_before_wait": 0.0571,
+     "mean_other": -0.0339,
+     "frac_pos": 0.383
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.0977,
+     "mean_before_wait": -5.625,
+     "mean_other": -0.0956,
+     "frac_pos": 0.737
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.0018,
+     "mean_before_wait": -0.8672,
+     "mean_other": -0.0015,
+     "frac_pos": 0.519
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0985,
+     "mean_before_wait": -0.1387,
+     "mean_other": -0.0985,
+     "frac_pos": 0.183
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0058,
+     "mean_before_wait": -0.2139,
+     "mean_other": 0.0059,
+     "frac_pos": 0.547
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.126,
+     "mean_before_wait": -2.0625,
+     "mean_other": -0.1253,
+     "frac_pos": 0.135
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.2855,
+     "mean_before_wait": -7.8438,
+     "mean_other": -0.2826,
+     "frac_pos": 0.061
+    }
+   }
+  },
+  {
+   "id": "train/intermediate_algebra/3974",
+   "cut": true,
+   "ok": false,
+   "n_wait": 20,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": 0.0118,
+     "mean_before_wait": 0.1484,
+     "mean_other": 0.0111,
+     "frac_pos": 0.551
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.5976,
+     "mean_before_wait": -6.4359,
+     "mean_other": -0.5689,
+     "frac_pos": 0.513
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.0029,
+     "mean_before_wait": -0.6377,
+     "mean_other": 0.0003,
+     "frac_pos": 0.624
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0997,
+     "mean_before_wait": -0.4323,
+     "mean_other": -0.0981,
+     "frac_pos": 0.214
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0475,
+     "mean_before_wait": -0.1577,
+     "mean_other": 0.0485,
+     "frac_pos": 0.601
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.1116,
+     "mean_before_wait": -1.4996,
+     "mean_other": -0.1048,
+     "frac_pos": 0.222
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.4111,
+     "mean_before_wait": -7.225,
+     "mean_other": -0.3776,
+     "frac_pos": 0.101
+    }
+   }
+  },
+  {
+   "id": "train/precalculus/6764",
+   "cut": true,
+   "ok": false,
+   "n_wait": 16,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": 0.0064,
+     "mean_before_wait": 0.0641,
+     "mean_other": 0.0062,
+     "frac_pos": 0.544
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.5356,
+     "mean_before_wait": -7.1895,
+     "mean_other": -0.5095,
+     "frac_pos": 0.505
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": 0.0068,
+     "mean_before_wait": -1.1538,
+     "mean_other": 0.0113,
+     "frac_pos": 0.635
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0855,
+     "mean_before_wait": -0.5833,
+     "mean_other": -0.0835,
+     "frac_pos": 0.239
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0225,
+     "mean_before_wait": -0.2187,
+     "mean_other": 0.0234,
+     "frac_pos": 0.5
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.0994,
+     "mean_before_wait": -1.7389,
+     "mean_other": -0.0929,
+     "frac_pos": 0.257
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.3461,
+     "mean_before_wait": -7.4448,
+     "mean_other": -0.3182,
+     "frac_pos": 0.078
+    }
+   }
+  },
+  {
+   "id": "train/intermediate_algebra/4571",
+   "cut": true,
+   "ok": false,
+   "n_wait": 15,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": 0.0042,
+     "mean_before_wait": 0.0877,
+     "mean_other": 0.0038,
+     "frac_pos": 0.521
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.5608,
+     "mean_before_wait": -7.6354,
+     "mean_other": -0.5348,
+     "frac_pos": 0.6
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.0157,
+     "mean_before_wait": -1.2831,
+     "mean_other": -0.0111,
+     "frac_pos": 0.615
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0619,
+     "mean_before_wait": -0.7344,
+     "mean_other": -0.0594,
+     "frac_pos": 0.321
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0621,
+     "mean_before_wait": -0.1537,
+     "mean_other": 0.0629,
+     "frac_pos": 0.636
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.1559,
+     "mean_before_wait": -3.3737,
+     "mean_other": -0.1441,
+     "frac_pos": 0.245
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.4338,
+     "mean_before_wait": -8.8625,
+     "mean_other": -0.4029,
+     "frac_pos": 0.071
+    }
+   }
+  },
+  {
+   "id": "train/prealgebra/5803",
+   "cut": true,
+   "ok": false,
+   "n_wait": 23,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": 0.0419,
+     "mean_before_wait": 0.0909,
+     "mean_other": 0.0416,
+     "frac_pos": 0.7
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.7336,
+     "mean_before_wait": -5.518,
+     "mean_other": -0.7066,
+     "frac_pos": 0.54
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.1076,
+     "mean_before_wait": -1.1364,
+     "mean_other": -0.1018,
+     "frac_pos": 0.47
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0746,
+     "mean_before_wait": -0.5191,
+     "mean_other": -0.0721,
+     "frac_pos": 0.29
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": -0.0285,
+     "mean_before_wait": -0.2238,
+     "mean_other": -0.0274,
+     "frac_pos": 0.295
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.1342,
+     "mean_before_wait": -1.5346,
+     "mean_other": -0.1263,
+     "frac_pos": 0.229
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.4692,
+     "mean_before_wait": -6.6997,
+     "mean_other": -0.434,
+     "frac_pos": 0.102
+    }
+   }
+  },
+  {
+   "id": "train/prealgebra/5650",
+   "cut": true,
+   "ok": false,
+   "n_wait": 11,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": -0.008,
+     "mean_before_wait": 0.07,
+     "mean_other": -0.0082,
+     "frac_pos": 0.466
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.4612,
+     "mean_before_wait": -8.0227,
+     "mean_other": -0.4408,
+     "frac_pos": 0.583
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.0363,
+     "mean_before_wait": -2.4222,
+     "mean_other": -0.0298,
+     "frac_pos": 0.579
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0989,
+     "mean_before_wait": -0.9114,
+     "mean_other": -0.0967,
+     "frac_pos": 0.195
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0137,
+     "mean_before_wait": -0.2893,
+     "mean_other": 0.0145,
+     "frac_pos": 0.536
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.0923,
+     "mean_before_wait": -1.7834,
+     "mean_other": -0.0878,
+     "frac_pos": 0.238
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.3123,
+     "mean_before_wait": -6.6591,
+     "mean_other": -0.2952,
+     "frac_pos": 0.079
+    }
+   }
+  },
+  {
+   "id": "train/counting_and_probability/2109",
+   "cut": true,
+   "ok": false,
+   "n_wait": 11,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": 0.0092,
+     "mean_before_wait": 0.1288,
+     "mean_other": 0.0089,
+     "frac_pos": 0.543
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.4377,
+     "mean_before_wait": -8.608,
+     "mean_other": -0.4157,
+     "frac_pos": 0.636
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.0219,
+     "mean_before_wait": -2.1404,
+     "mean_other": -0.0161,
+     "frac_pos": 0.606
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0453,
+     "mean_before_wait": -0.7182,
+     "mean_other": -0.0435,
+     "frac_pos": 0.369
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0478,
+     "mean_before_wait": -0.0894,
+     "mean_other": 0.0482,
+     "frac_pos": 0.563
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.1412,
+     "mean_before_wait": -1.7772,
+     "mean_other": -0.1368,
+     "frac_pos": 0.133
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.3879,
+     "mean_before_wait": -7.8544,
+     "mean_other": -0.3678,
+     "frac_pos": 0.072
+    }
+   }
+  },
+  {
+   "id": "train/prealgebra/6178",
+   "cut": true,
+   "ok": false,
+   "n_wait": 17,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": -0.0223,
+     "mean_before_wait": 0.022,
+     "mean_other": -0.0224,
+     "frac_pos": 0.386
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.8403,
+     "mean_before_wait": -5.8428,
+     "mean_other": -0.8194,
+     "frac_pos": 0.395
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.0982,
+     "mean_before_wait": -0.9056,
+     "mean_other": -0.0948,
+     "frac_pos": 0.556
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0411,
+     "mean_before_wait": -0.2197,
+     "mean_other": -0.0403,
+     "frac_pos": 0.365
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0041,
+     "mean_before_wait": -0.2196,
+     "mean_other": 0.0051,
+     "frac_pos": 0.408
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.116,
+     "mean_before_wait": -1.2659,
+     "mean_other": -0.1113,
+     "frac_pos": 0.309
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.5045,
+     "mean_before_wait": -6.4122,
+     "mean_other": -0.4799,
+     "frac_pos": 0.094
+    }
+   }
+  },
+  {
+   "id": "train/counting_and_probability/1904",
+   "cut": true,
+   "ok": false,
+   "n_wait": 8,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": -0.0051,
+     "mean_before_wait": 0.0287,
+     "mean_other": -0.0052,
+     "frac_pos": 0.512
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.2587,
+     "mean_before_wait": -4.002,
+     "mean_other": -0.2513,
+     "frac_pos": 0.602
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.0238,
+     "mean_before_wait": -0.6866,
+     "mean_other": -0.0225,
+     "frac_pos": 0.562
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.1035,
+     "mean_before_wait": -0.1185,
+     "mean_other": -0.1035,
+     "frac_pos": 0.163
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0442,
+     "mean_before_wait": -0.1984,
+     "mean_other": 0.0446,
+     "frac_pos": 0.629
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.1073,
+     "mean_before_wait": -1.083,
+     "mean_other": -0.1054,
+     "frac_pos": 0.188
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.2759,
+     "mean_before_wait": -4.9834,
+     "mean_other": -0.2667,
+     "frac_pos": 0.065
+    }
+   }
+  },
+  {
+   "id": "train/geometry/3283",
+   "cut": true,
+   "ok": false,
+   "n_wait": 9,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": -0.0563,
+     "mean_before_wait": 0.0504,
+     "mean_other": -0.0566,
+     "frac_pos": 0.3
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.5142,
+     "mean_before_wait": -8.158,
+     "mean_other": -0.4974,
+     "frac_pos": 0.487
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.019,
+     "mean_before_wait": -1.9361,
+     "mean_other": -0.0147,
+     "frac_pos": 0.641
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0604,
+     "mean_before_wait": -0.3687,
+     "mean_other": -0.0597,
+     "frac_pos": 0.307
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": -0.0047,
+     "mean_before_wait": -0.2015,
+     "mean_other": -0.0042,
+     "frac_pos": 0.437
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.0705,
+     "mean_before_wait": -2.1173,
+     "mean_other": -0.0659,
+     "frac_pos": 0.323
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.3698,
+     "mean_before_wait": -8.2847,
+     "mean_other": -0.3524,
+     "frac_pos": 0.078
+    }
+   }
+  },
+  {
+   "id": "train/intermediate_algebra/4184",
+   "cut": true,
+   "ok": false,
+   "n_wait": 10,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": 0.0015,
+     "mean_before_wait": 0.0083,
+     "mean_other": 0.0015,
+     "frac_pos": 0.518
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.427,
+     "mean_before_wait": -5.2625,
+     "mean_other": -0.4151,
+     "frac_pos": 0.55
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": 0.0224,
+     "mean_before_wait": -0.5059,
+     "mean_other": 0.0237,
+     "frac_pos": 0.689
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0802,
+     "mean_before_wait": -0.2025,
+     "mean_other": -0.0799,
+     "frac_pos": 0.224
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0265,
+     "mean_before_wait": -0.1302,
+     "mean_other": 0.0269,
+     "frac_pos": 0.549
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.1182,
+     "mean_before_wait": -1.4735,
+     "mean_other": -0.1148,
+     "frac_pos": 0.188
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.3182,
+     "mean_before_wait": -6.4359,
+     "mean_other": -0.3032,
+     "frac_pos": 0.068
+    }
+   }
+  },
+  {
+   "id": "train/counting_and_probability/2147",
+   "cut": true,
+   "ok": false,
+   "n_wait": 11,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": -0.0113,
+     "mean_before_wait": 0.0921,
+     "mean_other": -0.0116,
+     "frac_pos": 0.439
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.2683,
+     "mean_before_wait": -7.3523,
+     "mean_other": -0.2492,
+     "frac_pos": 0.702
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.0046,
+     "mean_before_wait": -0.8766,
+     "mean_other": -0.0023,
+     "frac_pos": 0.545
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0044,
+     "mean_before_wait": -0.5335,
+     "mean_other": -0.0029,
+     "frac_pos": 0.532
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0532,
+     "mean_before_wait": -0.175,
+     "mean_other": 0.0538,
+     "frac_pos": 0.621
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.1642,
+     "mean_before_wait": -2.3303,
+     "mean_other": -0.1584,
+     "frac_pos": 0.098
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.3748,
+     "mean_before_wait": -7.8608,
+     "mean_other": -0.3546,
+     "frac_pos": 0.053
+    }
+   }
+  },
+  {
+   "id": "train/prealgebra/6095",
+   "cut": true,
+   "ok": false,
+   "n_wait": 11,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": 0.0143,
+     "mean_before_wait": 0.089,
+     "mean_other": 0.0141,
+     "frac_pos": 0.568
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.3228,
+     "mean_before_wait": -7.2727,
+     "mean_other": -0.304,
+     "frac_pos": 0.577
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": 0.0072,
+     "mean_before_wait": -1.4291,
+     "mean_other": 0.0111,
+     "frac_pos": 0.631
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0848,
+     "mean_before_wait": -0.2535,
+     "mean_other": -0.0844,
+     "frac_pos": 0.228
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.005,
+     "mean_before_wait": -0.1118,
+     "mean_other": 0.0053,
+     "frac_pos": 0.434
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.1402,
+     "mean_before_wait": -1.6596,
+     "mean_other": -0.1361,
+     "frac_pos": 0.15
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.3088,
+     "mean_before_wait": -6.5938,
+     "mean_other": -0.2919,
+     "frac_pos": 0.08
+    }
+   }
+  },
+  {
+   "id": "train/intermediate_algebra/3956",
+   "cut": true,
+   "ok": false,
+   "n_wait": 4,
+   "neurons": {
+    "L15.1958": {
+     "cos": -0.262,
+     "mean_gen": -0.0115,
+     "mean_before_wait": 0.0577,
+     "mean_other": -0.0115,
+     "frac_pos": 0.456
+    },
+    "L16.2431": {
+     "cos": -0.507,
+     "mean_gen": -0.4535,
+     "mean_before_wait": -6.1416,
+     "mean_other": -0.448,
+     "frac_pos": 0.558
+    },
+    "L17.873": {
+     "cos": 0.431,
+     "mean_gen": -0.0075,
+     "mean_before_wait": -1.2885,
+     "mean_other": -0.0062,
+     "frac_pos": 0.683
+    },
+    "L18.3368": {
+     "cos": 0.43,
+     "mean_gen": -0.0711,
+     "mean_before_wait": -0.5276,
+     "mean_other": -0.0707,
+     "frac_pos": 0.278
+    },
+    "L18.3801": {
+     "cos": -0.398,
+     "mean_gen": 0.0003,
+     "mean_before_wait": -0.2341,
+     "mean_other": 0.0005,
+     "frac_pos": 0.498
+    },
+    "L20.3748": {
+     "cos": 0.338,
+     "mean_gen": -0.1031,
+     "mean_before_wait": -3.0898,
+     "mean_other": -0.1001,
+     "frac_pos": 0.267
+    },
+    "L22.5041": {
+     "cos": 0.478,
+     "mean_gen": -0.3325,
+     "mean_before_wait": -8.0225,
+     "mean_other": -0.325,
+     "frac_pos": 0.079
+    }
+   }
+  }
+ ]
+}
