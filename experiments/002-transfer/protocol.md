@@ -55,3 +55,27 @@ The dev result for C (4 wins / 0 losses, p=0.125) is underpowered, so it is re-t
 - **Secondary:** accuracy, cut rate, looping count (last-2k rep > 0.5), and correct by MATH level.
 - **Scored once.** n is not changed after seeing the results.
 - 2026-11-14, confirmation scored: 6 wins / 1 loss, p=0.125. **Not confirmed** (see REPORT.md). The level breakdown and the dev+held-out pooling were added afterwards, are labelled post-hoc, and are not used as a test.
+
+## Composition: MIT's loop edit + the doubt edit (pre-registered 2026-11-14, before running)
+**Free findings that motivate it** (weights and existing traces, no calls):
+- **MIT's edit is exactly rank-1 at L15 and L19.** Its direction has |cos| ≈ 0.08–0.12 with our 0.8B doubt direction at every layer from L12 to L23; the random 95th percentile is 0.06. The column overlap is 5/64 at L15 and 2/64 at L19. So the loop direction and the doubt direction are almost orthogonal: two different handles.
+- **B removes the loops but not the indecision.** B's non-looping capped traces end in re-checks of small steps that are already correct. For example, it gets "C(6,4) = 15", writes "Wait, let me check this again carefully", and gets 15 again. The gold answer is 15.
+
+**User's hypothesis under test:** the root failure is indecision on small steps, and looping is one way it shows.
+- If that is right, the doubt edit on top of the loop edit converts B's leftover re-checking into commits: **BC > B**.
+- If looping were the whole problem, BC ≈ B.
+
+**Arms:** 0.8B, 64 fresh MATH-train problems (seed 4), 16k cap, 32 slots, sampling seed 0, paired.
+- **B:** MIT checkpoint.
+- **C:** base + `edits/c_recipe.py`.
+- **BC:** MIT checkpoint + `edits/c_recipe.py`, unchanged (its u comes from base 0.8B activations, and its columns are chosen on the MIT weights).
+- A is not rerun. The question is whether BC beats each single edit, and each single edit already beat A on dev.
+
+**Primary endpoint:** BC vs B, two-sided paired sign test, p < 0.05.
+
+**Secondary:**
+- BC vs C
+- accuracy, finish rate, looping (last-2k rep > 0.5)
+- capped traces that already contain a distinctive numeric gold
+
+**Budget:** 3 calls, which brings the total to 10 of 50.
