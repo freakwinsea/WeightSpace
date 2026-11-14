@@ -54,3 +54,4 @@ The dev result for C (4 wins / 0 losses, p=0.125) is underpowered, so it is re-t
 - **Primary endpoint:** two-sided paired sign test, C vs A. **p < 0.05 = confirmed.** Otherwise the gain is not confirmed, and it is reported that way.
 - **Secondary:** accuracy, cut rate, looping count (last-2k rep > 0.5), and correct by MATH level.
 - **Scored once.** n is not changed after seeing the results.
+- 2026-11-14, confirmation scored: 6 wins / 1 loss, p=0.125. **Not confirmed** (see REPORT.md). The level breakdown and the dev+held-out pooling were added afterwards, are labelled post-hoc, and are not used as a test.

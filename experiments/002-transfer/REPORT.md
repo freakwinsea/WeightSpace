@@ -60,3 +60,27 @@ D is not a weaker version of C. It is a *larger* edit on mostly *different* neur
 - **Contamination:** I knew MIT's 0.8B answer (L15/L19, repetition direction). C's layers come from 2B, and they overlap MIT's at L15.
 - **Bridge method:** D used a linear least-squares map through the tied embeddings, with readout R² ≈ 0.30. A better map (for example a CCA fit on paired activations) is untested, but it would need 0.8B forward calls and so would no longer be "zero-call" transfer.
 - **What "rep" measures:** the fraction of the last 2,000 tokens inside a repeated 20-gram. It is not comparable to the Arm 0 number, which was measured at 4k.
+
+## Held-out confirmation of C (pre-registered in protocol.md; scored once)
+Base vs C on 128 problems from MATH-500 (seed-0 shuffle, first 128) at 16k, paired:
+
+| | Base | C |
+|---|---|---|
+| correct | 11 (8.6%) | 16 (12.5%) |
+| finished | 9 | 13 |
+| finished answers that are correct | 9 / 9 | 13 / 13 |
+| looping (last-2k rep > 0.5) | 86 | 78 |
+| tokens on the 10 problems both solved | 9,159 | 8,409 |
+| correct by level 1 / 2 / 3 / 4 / 5 | 4 / 4 / 1 / 2 / 0 | 4 / 5 / 2 / 4 / 1 |
+
+- **Primary endpoint: 6 wins / 1 loss, p = 0.125. Not confirmed** under the pre-registered p < 0.05 rule.
+- **The direction is the same as on dev,** but the run lacks power:
+  - 0.8B is capped on 90%+ of problems, even at 16k.
+  - Only 7 of the 128 pairs differ in outcome.
+  - With so few discordant pairs, even a 6:1 split can't reach significance.
+- **Post-hoc, descriptive only (not a test):**
+  - Pooling dev and held-out gives 10 wins / 1 loss.
+  - Unlike 2B, the wins skew harder: 4 of the 6 are level 4–5.
+- **Lesson for the next design:** at 0.8B, problems are not the limiting resource; outcome changes are. Two ways to get more of them:
+  - several sampling seeds per problem
+  - an endpoint with more signal per problem, such as the finish rate or tokens-to-commit

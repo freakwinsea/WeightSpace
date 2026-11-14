@@ -1,0 +1,18 @@
+
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]
+Loading weights:   7%|▋         | 23/320 [00:00<00:01, 218.64it/s]
+Loading weights:  16%|█▌        | 50/320 [00:00<00:01, 248.16it/s]
+Loading weights:  23%|██▎       | 75/320 [00:00<00:01, 162.45it/s]
+Loading weights:  30%|███       | 97/320 [00:00<00:01, 176.62it/s]
+Loading weights:  38%|███▊      | 121/320 [00:00<00:01, 191.66it/s]
+Loading weights:  52%|█████▏    | 167/320 [00:00<00:00, 252.32it/s]
+Loading weights:  62%|██████▎   | 200/320 [00:00<00:00, 274.07it/s]
+Loading weights:  72%|███████▏  | 229/320 [00:01<00:00, 238.25it/s]
+Loading weights: 100%|██████████| 320/320 [00:01<00:00, 310.90it/s]
+llama-server on 127.0.0.1:8090
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+llama-server on 127.0.0.1:8090
+llama-server on 127.0.0.1:8090
+llama-server on 127.0.0.1:8090
+{"label": "base", "cap": "16384", "n": 128, "acc": 0.0859375, "cut": 0.9296875, "rep": 0.624828125}
