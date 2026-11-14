@@ -84,3 +84,36 @@ Base vs C on 128 problems from MATH-500 (seed-0 shuffle, first 128) at 16k, pair
 - **Lesson for the next design:** at 0.8B, problems are not the limiting resource; outcome changes are. Two ways to get more of them:
   - several sampling seeds per problem
   - an endpoint with more signal per problem, such as the finish rate or tokens-to-commit
+
+## Composition: MIT's loop edit + the doubt edit (pre-registered in protocol.md)
+**Free findings first** (weights and traces, no calls):
+- **MIT's edit is exactly rank-1 at L15 and L19.** Its direction has |cos| ≈ 0.08–0.12 with our doubt direction at every layer from L12 to L23, against a random 95th percentile of 0.06. Column overlap is 5/64 at L15 and 2/64 at L19, so they are two nearly orthogonal handles.
+- **With the loops removed (B), the capped traces don't commit.** They re-check small steps that are already correct. One gets "C(6,4) = 15", writes "Wait, let me check this again carefully", and gets 15 again; the gold is 15.
+
+**The run:** 64 fresh MATH-train problems (seed 4; 1 chance overlap each with the calibration set and the Arm 2 dev set), 16k cap, paired:
+
+| | B (MIT) | C (doubt) | **BC (both)** |
+|---|---|---|---|
+| correct | 6 | 8 | **11** |
+| finished (all of them correct, except one in BC) | 6 | 8 | **12** |
+| looping (last-2k rep > 0.5) | 5 | 39 | 5 |
+| capped traces that already contain the gold | 16 / 35 | 16 / 34 | 11 / 30 |
+| tokens on the 6 problems B and BC both solved | 5,860 | | 4,433 |
+
+Paired comparisons:
+- **Primary, BC vs B: 5 wins / 0 losses, p = 0.062.** This narrowly misses p < 0.05, so the result is not confirmed by the pre-registered rule.
+- **Secondary, finish rate BC vs B: 6 / 0, p = 0.031.**
+- BC vs C: 5 / 2 (p = 0.45).
+- C vs B: 3 / 1.
+
+**Reading:**
+- Every discordant pair went the way the indecision hypothesis predicted.
+- On top of B, the doubt edit keeps loops at B's level and doubles the number of committed answers.
+- It also cuts the capped traces that had the right answer and abandoned it.
+- So the loop edit and the doubt edit stack, and BC is the best 0.8B edit in this project (11/64 vs MIT's 6/64 on the same problems).
+- That fits "one indecision, at least two outlets": remove the loop outlet, and the indecision still has to be removed separately.
+
+**Across this experiment's three pre-registered tests of adding the doubt edit** (C vs A on dev, C vs A held out, BC vs B):
+- Results: 4 / 0, 6 / 1, 5 / 0.
+- Each one is underpowered on its own.
+- Post-hoc and descriptive only: 15 of the 16 discordant pairs favour the doubt edit.

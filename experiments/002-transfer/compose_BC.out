@@ -1,0 +1,17 @@
+
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]
+Loading weights:   6%|▌         | 18/320 [00:00<00:01, 168.38it/s]
+Loading weights:  13%|█▎        | 42/320 [00:00<00:01, 206.50it/s]
+Loading weights:  20%|█▉        | 63/320 [00:00<00:01, 187.63it/s]
+Loading weights:  28%|██▊       | 90/320 [00:00<00:01, 198.72it/s]
+Loading weights:  35%|███▍      | 111/320 [00:00<00:01, 148.57it/s]
+Loading weights:  41%|████      | 131/320 [00:00<00:01, 153.31it/s]
+Loading weights:  46%|████▋     | 148/320 [00:00<00:01, 153.80it/s]
+Loading weights:  93%|█████████▎| 297/320 [00:01<00:00, 503.20it/s]
+Loading weights: 100%|██████████| 320/320 [00:01<00:00, 318.24it/s]
+edit 192668 weights
+model.safetensors-00001-of-00001.safetensors: 3 tensors replaced
+llama-server on 127.0.0.1:8090
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+{"acc": 0.171875, "cut": 0.8125, "mean_tok": 14619.765625, "mean_rep": 0.14740624999999996, "seconds": 3786, "n": 64}

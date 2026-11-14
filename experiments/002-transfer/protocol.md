@@ -79,3 +79,4 @@ The dev result for C (4 wins / 0 losses, p=0.125) is underpowered, so it is re-t
 - capped traces that already contain a distinctive numeric gold
 
 **Budget:** 3 calls, which brings the total to 10 of 50.
+- 2026-11-14, composition scored: BC vs B **5 / 0, p = 0.062, primary not met**. Finish rate (a secondary endpoint): 6 / 0, p = 0.031. The 15/16 pooling across tests is post-hoc and descriptive. Calls used: 10 of 50.
