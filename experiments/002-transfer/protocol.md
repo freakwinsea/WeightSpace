@@ -45,3 +45,12 @@ The direction for C is derived from the 32 Arm-0 calibration texts (base 0.8B, M
     - If D > F, structure beyond vocabulary transferred.
 - Six arms (A–F), 32 problems each, at 16k.
 - 2026-11-13, **after all six arms ran**: results in `REPORT.md`. No analysis choice was changed after seeing the data. Added afterwards and labelled as post-hoc: the column-overlap/update-norm table (free weight analysis) and the "looping = rep > 0.5" count. Calls used: 7 of 50.
+
+## Confirmation of C (pre-registered 2026-11-13, after the six arms, before running)
+The dev result for C (4 wins / 0 losses, p=0.125) is underpowered, so it is re-tested once on held-out data the editor has not seen:
+- **Data:** MATH-500 shuffled with seed 0, first **128** problems. This is the same subset rule as Exp 001's held-out eval. 0.8B has never been run on it.
+- **Arms:** A (base 0.8B) and C (`edits/c_recipe.py`, unchanged). No re-tuning.
+- **Settings:** 16k cap, 32 slots, the same sampling as Arm 2. Unbudgeted under Exp 001's held-out rule, via `heldout.py` with `WS_MODEL=Qwen/Qwen3.5-0.8B`.
+- **Primary endpoint:** two-sided paired sign test, C vs A. **p < 0.05 = confirmed.** Otherwise the gain is not confirmed, and it is reported that way.
+- **Secondary:** accuracy, cut rate, looping count (last-2k rep > 0.5), and correct by MATH level.
+- **Scored once.** n is not changed after seeing the results.

@@ -1,7 +1,7 @@
 """Held-out MATH-500 eval, scored once. python heldout.py <label> <cap> <n|all> <parallel> [edit files...]
 Unbudgeted (the editor never sees these); chunks of 64 saved as calls/heldout_<label>_<cap>_<k>.json and skipped
 if present, so an overnight crash resumes. Subset = math500 shuffled with seed 0, first n (fixed before scoring)."""
-import sys, json, random
+import os, sys, json, random
 from pathlib import Path
 import ws
 
@@ -11,7 +11,7 @@ if __name__ == "__main__":
     random.Random(0).shuffle(probs)
     probs = probs if n == "all" else probs[:int(n)]
     chunk = min(64, int(par)) if int(cap) > 4096 else 64
-    s = ws.Session("Qwen/Qwen3.5-2B", budgeted=False)
+    s = ws.Session(os.environ.get("WS_MODEL", "Qwen/Qwen3.5-2B"), budgeted=False)
     for e in edits:
         print("edit", s.apply(e)["n"], "weights", flush=True)
     rows = []
