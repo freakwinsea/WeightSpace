@@ -74,3 +74,9 @@ Running record of my reasoning, including wrong turns. Call numbers match `log.j
 - **Strength:** the gain plateaus from α=1 to α=4 (+2 problems over e02, not significant) and drops at α=6. Wait/1k climbs back up from α=4, which looks like overshoot disruption. This is unlike Astra on 0.8B, where gains kept growing up to α=6. 2B's lever saturates at roughly "remove the direction".
 - **Decision:** keep e02 (α=1). The sweep picked no new α, so per protocol no new held-out set is needed. No setting produced a wrong finished answer.
 - **Budget:** 14/50.
+
+## Bug found while starting Arm 2 (2026-11-13)
+- Qwen3.5's final RMSNorm is zero-centred: its gain is **(1 + w)**, not w.
+- My logit-lens analyses (call 2, `wa_logitlens.py`, `wa_wait_neurons.py`) multiplied by w alone, so the per-dimension weighting was off.
+- **Affected:** only the exploratory "Wait"-column ranking that led to e01, which was abandoned anyway.
+- **Not affected:** e02 and every later edit, which use residual-stream means, not the logit lens.

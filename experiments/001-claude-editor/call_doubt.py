@@ -3,7 +3,7 @@ At positions whose NEXT token starts a doubt (Wait/But/Hmm/Actually/Alternativel
 (So/Therefore/Thus/Hence), capture each layer's residual output, MLP output and attention/mixer output.
 Saves per-layer means so we can compute d_L = mean(doubt) - mean(commit) and which sublayers write it.
 python call_doubt.py <gen_call.json> <n_texts> "<purpose>" "<hypothesis>" """
-import sys, json, time
+import os, sys, json, time
 import torch
 import ws
 
@@ -12,7 +12,7 @@ COMMIT = ["So", " So", "Therefore", " Therefore", "Thus", " Thus", "Hence", " He
 
 if __name__ == "__main__":
     src, n, purpose, hyp = sys.argv[1], int(sys.argv[2]), sys.argv[3], sys.argv[4]
-    s = ws.Session("Qwen/Qwen3.5-2B")
+    s = ws.Session(os.environ.get("WS_MODEL", "Qwen/Qwen3.5-2B"))
     m, tok = s.model, s.tok
     def one(words):  # single-token ids only
         enc = [tok.encode(w, add_special_tokens=False) for w in words]

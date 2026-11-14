@@ -10,7 +10,7 @@ import json, os, time, re, random, importlib.util
 from pathlib import Path
 import torch
 
-HERE = Path(__file__).parent
+HERE = Path(os.environ.get("WS_HERE") or Path(__file__).parent)  # Arm 2 points this at its own folder
 LOG = HERE / "log.jsonl"
 BUDGET = 50
 MAX_BATCH = 64
