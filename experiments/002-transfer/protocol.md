@@ -80,3 +80,24 @@ The dev result for C (4 wins / 0 losses, p=0.125) is underpowered, so it is re-t
 
 **Budget:** 3 calls, which brings the total to 10 of 50.
 - 2026-11-14, composition scored: BC vs B **5 / 0, p = 0.062, primary not met**. Finish rate (a secondary endpoint): 6 / 0, p = 0.031. The 15/16 pooling across tests is post-hoc and descriptive. Calls used: 10 of 50.
+
+## Powered test of BC vs B (pre-registered 2026-11-14, before running)
+The composition test came out 5/0 (p = 0.062) because only 5 of 64 single draws differed. This test buys more differing outcomes.
+- **Problems:** 128 fresh MATH-train problems (seed 5). 2 of them overlap earlier 0.8B problems by chance; they are kept, since this was fixed before running.
+- **Draws:** 2 sampling seeds (0 and 1000) per problem.
+- **Arms:** B (MIT checkpoint) and BC (MIT checkpoint + `edits/c_recipe.py`, unchanged).
+- **Settings:** 16k cap, 32 slots. Common random numbers: the same seed for the same prompt in both arms.
+- **Runner:** `run_powered.py`.
+- **Budget:** 8 calls, which brings the total to 18 of 50.
+
+**Primary endpoint:** for each problem, net = (BC correct over 2 draws) − (B correct over 2 draws). Two-sided sign test over problems with net ≠ 0. **p < 0.05 = confirmed.** The problem is the unit, so the test is not fooled by the two draws of one problem being correlated.
+
+**Secondary:**
+- draw-level paired sign test (anti-conservative, reported for comparison)
+- finish rate, per problem as for the primary
+- looping
+- tokens on problems both arms solved
+
+**Prediction (indecision hypothesis):** BC > B.
+
+**Scored once.** n is not changed after seeing the results.
