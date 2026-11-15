@@ -117,3 +117,37 @@ Paired comparisons:
 - Results: 4 / 0, 6 / 1, 5 / 0.
 - Each one is underpowered on its own.
 - Post-hoc and descriptive only: 15 of the 16 discordant pairs favour the doubt edit.
+
+## Powered test of BC vs B (pre-registered in protocol.md; scored once)
+128 fresh MATH-train problems (seed 5) × 2 sampling seeds, 16k cap, paired with common random numbers:
+
+| | B (MIT) | BC (MIT + doubt edit) |
+|---|---|---|
+| correct, of 256 draws | 27 (10.5%) | **40 (15.6%)** |
+| finished (correct) | 28 (26) | 43 (40) |
+| looping (last-2k rep > 0.5) | 24 | 22 |
+| tokens on the 21 draws both solved | 7,219 | 6,873 |
+
+Results:
+- **Primary, per problem (BC better / B better): 14 / 5, p = 0.064. Not confirmed** under the pre-registered p < 0.05 rule.
+- **Secondary:**
+  - per-problem finish rate: 17 / 6, p = 0.035
+  - draw-level: 19 / 6, p = 0.015 (anti-conservative, because the two draws of one problem are correlated)
+
+**Where this leaves the doubt edit on 0.8B.** It has had four pre-registered tests, on disjoint problems:
+
+| Test | Comparison | Result | p |
+|---|---|---|---|
+| Arm 2 dev | C vs A | 4 / 0 | 0.125 |
+| Held-out MATH-500 | C vs A | 6 / 1 | 0.125 |
+| Composition | BC vs B | 5 / 0 | 0.062 |
+| Powered | BC vs B | 14 / 5 | 0.064 |
+
+- All four point the same way, and none passes on its own.
+- **Post-hoc, not a pre-registered test:** combining the four p-values with Fisher's method gives p ≈ 0.013.
+- **The honest summary:** a consistent but modest effect, roughly 1.5× the correct answers at a low base rate.
+  - It comes from committing more often: finished answers stay about 95–100% correct.
+  - It does not come from loop removal: looping is unchanged on top of MIT's edit.
+- **What I won't do:** keep adding runs until one crosses 0.05. That would be optional stopping.
+  - A definitive test needs its power planned in advance.
+  - At the observed 74:26 split, about 45 differing problems would give roughly 80% power, which is about 300 problems × 2 seeds.

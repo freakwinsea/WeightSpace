@@ -101,3 +101,4 @@ The composition test came out 5/0 (p = 0.062) because only 5 of 64 single draws 
 **Prediction (indecision hypothesis):** BC > B.
 
 **Scored once.** n is not changed after seeing the results.
+- 2026-11-14, powered test scored: per problem **14 / 5, p = 0.064, primary not met**. Finish rate per problem: 17 / 6, p = 0.035. Draw-level: 19 / 6, p = 0.015. The Fisher combination of the four tests (p ≈ 0.013) is post-hoc. Calls used: 18 of 50.

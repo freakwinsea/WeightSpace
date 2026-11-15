@@ -1,0 +1,22 @@
+
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]
+Loading weights:   8%|▊         | 25/320 [00:00<00:01, 190.06it/s]
+Loading weights:  14%|█▍        | 46/320 [00:00<00:01, 199.06it/s]
+Loading weights:  23%|██▎       | 73/320 [00:00<00:01, 205.79it/s]
+Loading weights:  31%|███       | 98/320 [00:00<00:01, 220.31it/s]
+Loading weights:  39%|███▉      | 124/320 [00:00<00:00, 230.83it/s]
+Loading weights:  46%|████▋     | 148/320 [00:00<00:00, 208.62it/s]
+Loading weights:  54%|█████▍    | 172/320 [00:00<00:00, 195.27it/s]
+Loading weights:  60%|██████    | 192/320 [00:00<00:00, 188.53it/s]
+Loading weights: 100%|██████████| 320/320 [00:00<00:00, 326.26it/s]
+edit 192668 weights
+llama-server on 127.0.0.1:8090
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+powered_BC_s0_0 {'acc': 0.1875, 'cut': 0.796875, 'mean_tok': 15182.390625, 'mean_rep': 0.08939062499999995, 'seconds': 3902, 'n': 64}
+llama-server on 127.0.0.1:8090
+powered_BC_s0_1 {'acc': 0.15625, 'cut': 0.84375, 'mean_tok': 14875.484375, 'mean_rep': 0.15959374999999995, 'seconds': 3937, 'n': 64}
+llama-server on 127.0.0.1:8090
+powered_BC_s1000_0 {'acc': 0.109375, 'cut': 0.875, 'mean_tok': 15195.75, 'mean_rep': 0.09076562499999996, 'seconds': 3956, 'n': 64}
+llama-server on 127.0.0.1:8090
+powered_BC_s1000_1 {'acc': 0.171875, 'cut': 0.8125, 'mean_tok': 14834.0, 'mean_rep': 0.10324999999999998, 'seconds': 3963, 'n': 64}
