@@ -192,8 +192,12 @@ class Session:
         call_no = self._spend("generate", purpose, hypothesis, len(problems))
         path = self.gguf()
         t0, rows = time.time(), []
-        with gen.Server(path, parallel=min(parallel, len(problems)), cap=max_new_tokens) as srv:
-            outs = srv.generate(self.prompts(problems), max_new_tokens, seed, SAMPLING)
+        self.model.cpu(); torch.cuda.empty_cache()  # free VRAM for llama-server (4B: weights twice don't fit in 16 GB)
+        try:
+            with gen.Server(path, parallel=min(parallel, len(problems)), cap=max_new_tokens) as srv:
+                outs = srv.generate(self.prompts(problems), max_new_tokens, seed, SAMPLING)
+        finally:
+            self.model.cuda()
         for p, (text, ids, stop) in zip(problems, outs):
             rows.append({"id": p["id"], "gold": p["answer"], "n_tok": len(ids), "stop": stop,
                          "cut": stop == "limit" or len(ids) >= max_new_tokens,
