@@ -1,0 +1,150 @@
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:   0%|          | 2/426 [00:00<01:57,  3.62it/s]
+Loading weights:   1%|          | 5/426 [00:00<01:02,  6.74it/s]
+Loading weights:   2%|▏         | 9/426 [00:03<02:47,  2.50it/s]
+Loading weights:   2%|▏         | 10/426 [00:03<02:56,  2.36it/s]
+Loading weights:   3%|▎         | 13/426 [00:05<03:04,  2.23it/s]
+Loading weights:   4%|▍         | 17/426 [00:05<02:17,  2.97it/s]
+Loading weights:   6%|▋         | 27/426 [00:06<01:13,  5.44it/s]
+Loading weights:   7%|▋         | 28/426 [00:08<01:45,  3.77it/s]
+Loading weights:   7%|▋         | 30/426 [00:08<01:48,  3.65it/s]
+Loading weights:   9%|▉         | 39/426 [00:11<01:48,  3.56it/s]
+Loading weights:   9%|▉         | 40/426 [00:13<02:43,  2.36it/s]
+Loading weights:  10%|▉         | 41/426 [00:13<02:47,  2.30it/s]
+Loading weights:  10%|█         | 43/426 [00:14<02:33,  2.49it/s]
+Loading weights:  10%|█         | 44/426 [00:15<03:10,  2.01it/s]
+Loading weights:  11%|█         | 45/426 [00:16<03:33,  1.78it/s]
+Loading weights:  12%|█▏        | 52/426 [00:16<01:37,  3.83it/s]
+Loading weights:  13%|█▎        | 54/426 [00:17<01:27,  4.25it/s]
+Loading weights:  13%|█▎        | 55/426 [00:17<01:49,  3.40it/s]
+Loading weights:  14%|█▍        | 59/426 [00:18<01:43,  3.53it/s]
+Loading weights:  17%|█▋        | 72/426 [00:19<00:48,  7.28it/s]
+Loading weights:  17%|█▋        | 73/426 [00:21<01:25,  4.13it/s]
+Loading weights:  18%|█▊        | 76/426 [00:21<01:08,  5.11it/s]
+Loading weights:  18%|█▊        | 78/426 [00:22<01:36,  3.62it/s]
+Loading weights:  19%|█▉        | 80/426 [00:24<02:05,  2.76it/s]
+Loading weights:  19%|█▉        | 83/426 [00:25<02:08,  2.67it/s]
+Loading weights:  20%|█▉        | 85/426 [00:27<02:51,  1.99it/s]
+Loading weights:  22%|██▏       | 93/426 [00:28<01:38,  3.38it/s]
+Loading weights:  23%|██▎       | 98/426 [00:29<01:22,  3.98it/s]
+Loading weights:  23%|██▎       | 100/426 [00:30<01:44,  3.12it/s]
+Loading weights:  24%|██▍       | 103/426 [00:31<01:34,  3.41it/s]
+Loading weights:  25%|██▍       | 105/426 [00:33<02:22,  2.24it/s]
+Loading weights:  25%|██▌       | 107/426 [00:33<02:10,  2.45it/s]
+Loading weights:  27%|██▋       | 116/426 [00:36<01:35,  3.24it/s]
+Loading weights:  29%|██▉       | 123/426 [00:37<01:24,  3.57it/s]
+Loading weights:  29%|██▉       | 125/426 [00:39<01:46,  2.82it/s]
+Loading weights:  30%|██▉       | 126/426 [00:40<01:58,  2.54it/s]
+Loading weights:  30%|███       | 128/426 [00:42<02:28,  2.01it/s]
+Loading weights:  30%|███       | 129/426 [00:42<02:30,  1.98it/s]
+Loading weights:  31%|███       | 130/426 [00:42<02:18,  2.14it/s]
+Loading weights:  32%|███▏      | 137/426 [00:43<01:11,  4.04it/s]
+Loading weights:  34%|███▎      | 143/426 [00:44<00:53,  5.33it/s]
+Loading weights:  34%|███▍      | 144/426 [00:44<01:04,  4.39it/s]
+Loading weights:  35%|███▍      | 147/426 [00:45<01:00,  4.63it/s]
+Loading weights:  35%|███▍      | 149/426 [00:45<00:55,  5.03it/s]
+Loading weights:  36%|███▌      | 152/426 [00:48<02:05,  2.18it/s]
+Loading weights:  36%|███▌      | 153/426 [00:49<02:06,  2.15it/s]
+Loading weights:  36%|███▌      | 154/426 [00:50<02:26,  1.86it/s]
+Loading weights:  37%|███▋      | 156/426 [00:50<02:04,  2.17it/s]
+Loading weights:  37%|███▋      | 158/426 [00:53<02:57,  1.51it/s]
+Loading weights:  37%|███▋      | 159/426 [00:53<03:07,  1.42it/s]
+Loading weights:  38%|███▊      | 160/426 [00:55<04:13,  1.05it/s]
+Loading weights:  38%|███▊      | 161/426 [00:59<07:01,  1.59s/it]
+Loading weights:  38%|███▊      | 163/426 [01:00<04:42,  1.07s/it]
+Loading weights:  40%|████      | 172/426 [01:00<01:23,  3.05it/s]
+Loading weights:  41%|████      | 175/426 [01:01<01:24,  2.98it/s]
+Loading weights:  42%|████▏     | 179/426 [01:03<01:38,  2.51it/s]
+Loading weights:  42%|████▏     | 180/426 [01:04<01:41,  2.42it/s]
+Loading weights:  42%|████▏     | 181/426 [01:04<01:42,  2.40it/s]
+Loading weights:  43%|████▎     | 184/426 [01:05<01:36,  2.51it/s]
+Loading weights:  44%|████▎     | 186/426 [01:06<01:28,  2.71it/s]
+Loading weights:  45%|████▍     | 190/426 [01:07<01:11,  3.30it/s]
+Loading weights:  45%|████▌     | 192/426 [01:08<01:29,  2.62it/s]
+Loading weights:  46%|████▌     | 197/426 [01:08<01:00,  3.81it/s]
+Loading weights:  47%|████▋     | 201/426 [01:12<01:40,  2.23it/s]
+Loading weights:  49%|████▉     | 210/426 [01:14<01:09,  3.11it/s]
+Loading weights:  52%|█████▏    | 221/426 [01:14<00:41,  4.92it/s]
+Loading weights:  52%|█████▏    | 223/426 [01:15<00:41,  4.86it/s]
+Loading weights:  53%|█████▎    | 226/426 [01:16<00:46,  4.26it/s]
+Loading weights:  54%|█████▍    | 230/426 [01:17<00:41,  4.71it/s]
+Loading weights:  54%|█████▍    | 232/426 [01:17<00:45,  4.23it/s]
+Loading weights:  55%|█████▌    | 236/426 [01:20<01:06,  2.87it/s]
+Loading weights:  56%|█████▌    | 237/426 [01:20<01:16,  2.48it/s]
+Loading weights:  57%|█████▋    | 242/426 [01:21<00:50,  3.65it/s]
+Loading weights: 100%|██████████| 426/426 [01:21<00:00,  5.23it/s]
+doubt ids {85152, 1921, 50821, 32645, 3850, 88842, 77264, 37201, 13428, 13784} commit ids {1987, 13891, 30022, 52971, 43022, 4272, 14833}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+MIOpen: Warning [ParseAndLoadDb] File is unreadable: "D:\\WeightSpace\\.venv\\Lib\\site-packages\\_rocm_sdk_libraries\\bin\\gfx120020.HIP.fdb.txt"
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+D:\WeightSpace\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py:174: UserWarning: Flash Efficient attention on Current AMD GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at B:/src/pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:439.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+D:\WeightSpace\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py:174: UserWarning: Mem Efficient attention on Current AMD GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at B:/src/pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:499.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+train/intermediate_algebra/3974 doubt 2 commit 13
+train/precalculus/6764 doubt 9 commit 14
+train/intermediate_algebra/4571 doubt 4 commit 23
+train/prealgebra/5803 doubt 5 commit 5
+train/prealgebra/5650 doubt 2 commit 9
+train/counting_and_probability/2109 doubt 7 commit 20
+train/prealgebra/6178 doubt 24 commit 13
+train/counting_and_probability/1904 doubt 5 commit 8
+train/geometry/3283 doubt 8 commit 10
+train/intermediate_algebra/4184 doubt 7 commit 11
+train/counting_and_probability/2147 doubt 12 commit 27
+train/prealgebra/6095 doubt 11 commit 6
+train/intermediate_algebra/3956 doubt 4 commit 12
+train/precalculus/7272 doubt 1 commit 1
+train/precalculus/7311 doubt 4 commit 14
+train/algebra/281 doubt 4 commit 6
+train/prealgebra/5887 doubt 6 commit 7
+train/intermediate_algebra/3871 doubt 9 commit 9
+train/intermediate_algebra/3849 doubt 13 commit 8
+train/geometry/3223 doubt 10 commit 21
+train/algebra/970 doubt 1 commit 9
+train/precalculus/6770 doubt 3 commit 14
+train/precalculus/6768 doubt 4 commit 15
+train/geometry/2849 doubt 1 commit 7
+train/algebra/1626 doubt 6 commit 8
+train/algebra/1183 doubt 0 commit 2
+train/number_theory/4896 doubt 5 commit 7
+train/geometry/2706 doubt 11 commit 7
+train/counting_and_probability/2177 doubt 7 commit 10
+train/algebra/1722 doubt 1 commit 6
+train/counting_and_probability/2299 doubt 3 commit 0
+train/geometry/3135 doubt 12 commit 24
+
+layer | |d_res| | cos(d_L, d_23) | mlp write onto d_L | mixer write onto d_L
+L00     0.07 +0.069    +0.03    +0.03
+L01     0.14 +0.114    +0.04    +0.05
+L02     0.21 +0.148    +0.05    +0.07
+L03     0.30 +0.173    +0.06    +0.09
+L04     0.37 +0.176    +0.07    +0.06
+L05     0.47 +0.194    +0.06    +0.13
+L06     0.62 +0.214    +0.11    +0.14
+L07     0.66 +0.217    +0.03    +0.13
+L08     0.69 +0.229    +0.03    +0.08
+L09     0.76 +0.230    +0.03    +0.10
+L10     0.86 +0.229    +0.08    +0.11
+L11     0.93 +0.260    +0.07    +0.13
+L12     1.00 +0.252    +0.07    +0.08
+L13     1.09 +0.267    +0.08    +0.09
+L14     1.34 +0.286    +0.18    +0.19
+L15     1.57 +0.299    +0.20    +0.23
+L16     1.99 +0.330    +0.29    +0.36
+L17     2.29 +0.377    +0.28    +0.22
+L18     3.16 +0.438    +0.55    +0.60
+L19     4.09 +0.441    +0.67    +0.64
+L20     5.08 +0.495    +0.73    +0.63
+L21     5.79 +0.509    +0.59    +0.42
+L22     7.90 +0.594    +2.17    +0.54
+L23     8.14 +0.625    +0.47    +0.12
+L24     9.43 +0.689    +0.31    +1.50
+L25    10.05 +0.713    +0.81    +0.15
+L26    10.50 +0.750    +0.53    +0.22
+L27    11.04 +0.782    +0.90    +0.16
+L28    13.17 +0.816    +1.26    +1.27
+L29    13.88 +0.850    +1.31    +0.44
+L30    15.48 +0.897    +1.22    +1.08
+L31    14.17 +1.000    +0.27    +0.01

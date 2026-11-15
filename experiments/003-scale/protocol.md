@@ -41,3 +41,10 @@ For each problem, net = (edit correct over 2 draws) − (base correct over 2 dra
 - If the edit helps, a control can be added later.
 
 ## Change log
+- 2026-11-15, **during the eval, before any scoring**:
+  - Calls 1–2 and the edit's seed-0 eval completed.
+  - The **base** eval crashed when one 16k request passed the harness's 2-hour per-request timeout. The server logs show 2–2.5 tok/s per slot in that run, against about 10 tok/s in the edit's seed-0 run, consistent with VRAM spilling to system RAM.
+  - A power outage then stopped the edit's seed-1000 run.
+  - **Fix:** the per-request timeout was raised to 12 h. Nothing else changed: same 8 slots, f16 KV, sampling and problems.
+  - `calls/eval_edit_s0.json` is kept. Base seeds 0 and 1000 and edit seed 1000 are rerun.
+  - No eval file was opened or scored. The only figures seen were the progress lines' summary accuracy for edit seed 0 and the calibration call.

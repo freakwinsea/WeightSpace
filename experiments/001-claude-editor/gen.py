@@ -63,7 +63,7 @@ class Server:
                 "return_tokens": True}
         req = urllib.request.Request(f"http://127.0.0.1:{self.port}/completion", json.dumps(body).encode(),
                                      {"Content-Type": "application/json"})
-        r = json.load(urllib.request.urlopen(req, timeout=7200))
+        r = json.load(urllib.request.urlopen(req, timeout=43200))  # 4B @16k can run ~2 tok/s/slot when VRAM spills
         return r["content"], r.get("tokens") or [], r.get("stop_type")
 
     def generate(self, prompts, cap, seed, sampling):
