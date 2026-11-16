@@ -60,3 +60,14 @@ The eval was near ceiling (53 of 64 problems solved by both arms on both seeds),
 - **Sizing rule, fixed now:** the definitive test is base vs edit on fresh Level 5 problems × 2 seeds, with the same primary endpoint as above. Its n is chosen for about 40 discordant problems, which gives roughly 80% power at a 7 : 2 split: n = ceil(40 / d2), where d2 = 1 − (1 − d1)², capped at 64 per call.
   - If base finishes fewer than 25% of problems (floor) or more than 75% (ceiling), Level 5 is the wrong band, and I report that instead of sizing.
 - **Prediction:** base caps about half the time, d1 ≈ 0.15–0.25, and finished answers stay ≥ 90% correct.
+
+## Definitive test (written 2026-11-15, while calls 7–8 run and before either is seen)
+- **Size:** n is set by the calibration rule above, capped at **192 problems**. 192 × 2 seeds × 2 arms is about 30 GPU-hours. If the rule asks for more, 192 are run and the achieved power is reported.
+  - `run_final.py plan` computes n mechanically and writes `calls/final_plan.json`. If the band check fails, no test runs.
+- **Problems:** fresh MATH-train Level 5 problems: the seed-7 shuffle, excluding call 1, the eval and the calibration, with non-empty golds; the first n.
+- **Arms:** base vs `edits/recipe.py` (L22/28/29, unchanged), seeds 0 and 1000, 16k cap, 8 slots, torch on the CPU.
+  - Calls run in chunks of 64, interleaved per chunk and seed (base, then edit), so a crash leaves balanced arms.
+- **Primary endpoint:** unchanged from the eval. The per-problem net is summed over both seeds; two-sided sign test; **p < 0.05 = confirmed**. Scored once, after all calls.
+- **Secondary:** finish rate per problem, accuracy, tokens on draws both solved, and the draw-level sign test.
+  - Exploratory: **tokens to first commit**, the token position of the first `\boxed{` in the thinking or answer. This is not an endpoint, because it wasn't validated beforehand.
+- **Prediction:** edit > base, with a per-problem split near the observed 7 : 2.
