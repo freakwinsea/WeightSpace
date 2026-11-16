@@ -71,3 +71,7 @@ The eval was near ceiling (53 of 64 problems solved by both arms on both seeds),
 - **Secondary:** finish rate per problem, accuracy, tokens on draws both solved, and the draw-level sign test.
   - Exploratory: **tokens to first commit**, the token position of the first `\boxed{` in the thinking or answer. This is not an endpoint, because it wasn't validated beforehand.
 - **Prediction:** edit > base, with a per-problem split near the observed 7 : 2.
+- 2026-11-16, **calibration result** (calls 7–8, seen before the definitive test starts):
+  - Base finished 15/32 (47%, in band), all 15 correct. The edit finished 16/32, all correct. Looping was 0 in both arms.
+  - d1 = 5/32, split 3 : 2 for the edit. The rule gives **n = 139**, in 3 chunks (12 calls).
+  - Not a test: the 3 : 2 split is noted only as a warning that the true effect at Level 5 may be smaller than the 7 : 2 this test is sized for.
