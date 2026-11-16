@@ -1,102 +1,84 @@
 
 Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
-Loading weights:   1%|          | 5/426 [00:00<00:13, 32.24it/s]
-Loading weights:   3%|▎         | 12/426 [00:00<00:12, 32.58it/s]
-Loading weights:   4%|▍         | 16/426 [00:00<00:13, 30.72it/s]
-Loading weights:   7%|▋         | 31/426 [00:00<00:06, 57.93it/s]
-Loading weights:   9%|▉         | 39/426 [00:00<00:06, 56.15it/s]
-Loading weights:  11%|█         | 45/426 [00:01<00:08, 44.91it/s]
-Loading weights:  12%|█▏        | 51/426 [00:01<00:09, 39.33it/s]
-Loading weights:  13%|█▎        | 56/426 [00:01<00:10, 34.14it/s]
-Loading weights:  15%|█▍        | 62/426 [00:01<00:11, 32.80it/s]
-Loading weights:  17%|█▋        | 74/426 [00:01<00:07, 47.05it/s]
-Loading weights:  19%|█▉        | 80/426 [00:01<00:07, 44.30it/s]
-Loading weights:  20%|█▉        | 85/426 [00:02<00:07, 44.92it/s]
-Loading weights:  21%|██        | 90/426 [00:02<00:09, 33.81it/s]
-Loading weights:  24%|██▍       | 102/426 [00:02<00:06, 47.69it/s]
-Loading weights:  27%|██▋       | 113/426 [00:02<00:05, 55.17it/s]
-Loading weights:  28%|██▊       | 120/426 [00:02<00:05, 52.43it/s]
-Loading weights:  30%|███       | 128/426 [00:02<00:06, 47.36it/s]
-Loading weights:  31%|███▏      | 134/426 [00:03<00:07, 40.20it/s]
-Loading weights:  34%|███▍      | 144/426 [00:03<00:05, 48.60it/s]
-Loading weights:  36%|███▌      | 152/426 [00:03<00:05, 48.09it/s]
-Loading weights:  37%|███▋      | 158/426 [00:03<00:06, 42.67it/s]
-Loading weights:  38%|███▊      | 163/426 [00:03<00:06, 43.73it/s]
-Loading weights:  42%|████▏     | 181/426 [00:03<00:03, 63.13it/s]
-Loading weights:  45%|████▍     | 190/426 [00:04<00:03, 66.67it/s]
-Loading weights:  47%|████▋     | 199/426 [00:04<00:03, 61.25it/s]
-Loading weights:  49%|████▉     | 209/426 [00:04<00:03, 56.71it/s]
-Loading weights:  51%|█████     | 218/426 [00:04<00:03, 61.61it/s]
-Loading weights:  53%|█████▎    | 225/426 [00:04<00:04, 45.02it/s]
-Loading weights:  54%|█████▍    | 231/426 [00:05<00:05, 38.58it/s]
-Loading weights:  55%|█████▌    | 236/426 [00:05<00:07, 24.75it/s]
-Loading weights:  57%|█████▋    | 241/426 [00:05<00:07, 26.16it/s]
-Loading weights:  58%|█████▊    | 249/426 [00:06<00:07, 23.52it/s]
-Loading weights:  61%|██████    | 260/426 [00:06<00:05, 29.18it/s]
-Loading weights:  63%|██████▎   | 267/426 [00:06<00:04, 32.11it/s]
-Loading weights:  64%|██████▎   | 271/426 [00:06<00:04, 33.26it/s]
-Loading weights:  65%|██████▍   | 275/426 [00:06<00:04, 30.53it/s]
-Loading weights:  66%|██████▌   | 282/426 [00:06<00:04, 31.04it/s]
-Loading weights:  67%|██████▋   | 286/426 [00:07<00:04, 32.54it/s]
-Loading weights: 100%|██████████| 426/426 [00:07<00:00, 60.26it/s]
+Loading weights:   0%|          | 1/426 [00:01<10:25,  1.47s/it]
+Loading weights:   0%|          | 2/426 [00:02<08:54,  1.26s/it]
+Loading weights:   1%|          | 3/426 [00:03<09:15,  1.31s/it]
+Loading weights:   1%|          | 4/426 [00:05<10:54,  1.55s/it]
+Loading weights:   1%|          | 5/426 [00:10<18:50,  2.68s/it]
+Loading weights:   1%|▏         | 6/426 [00:11<13:54,  1.99s/it]
+Loading weights:   2%|▏         | 8/426 [00:14<11:51,  1.70s/it]
+Loading weights:   4%|▎         | 15/426 [00:14<03:45,  1.82it/s]
+Loading weights:   4%|▍         | 16/426 [00:16<04:35,  1.49it/s]
+Loading weights:   4%|▍         | 19/426 [00:16<03:24,  1.99it/s]
+Loading weights:   5%|▍         | 21/426 [00:17<03:01,  2.24it/s]
+Loading weights:   5%|▌         | 22/426 [00:18<03:31,  1.91it/s]
+Loading weights:   5%|▌         | 23/426 [00:19<04:11,  1.60it/s]
+Loading weights:   6%|▌         | 25/426 [00:20<04:33,  1.47it/s]
+Loading weights:   6%|▌         | 26/426 [00:21<03:55,  1.70it/s]
+Loading weights:   6%|▋         | 27/426 [00:21<03:55,  1.70it/s]
+Loading weights:   7%|▋         | 28/426 [00:22<03:55,  1.69it/s]
+Loading weights:   8%|▊         | 33/426 [00:24<03:07,  2.10it/s]
+Loading weights:   8%|▊         | 34/426 [00:25<03:40,  1.78it/s]
+Loading weights:   9%|▊         | 37/426 [00:26<03:18,  1.96it/s]
+Loading weights:   9%|▉         | 38/426 [00:27<03:20,  1.94it/s]
+Loading weights:   9%|▉         | 40/426 [00:28<03:24,  1.88it/s]
+Loading weights:  10%|█         | 44/426 [00:29<02:33,  2.49it/s]
+Loading weights:  11%|█         | 45/426 [00:30<03:05,  2.06it/s]
+Loading weights:  11%|█         | 46/426 [00:30<03:12,  1.97it/s]
+Loading weights:  11%|█         | 47/426 [00:31<03:17,  1.92it/s]
+Loading weights:  11%|█▏        | 48/426 [00:32<04:03,  1.55it/s]
+Loading weights:  12%|█▏        | 49/426 [00:33<03:41,  1.70it/s]
+Loading weights:  12%|█▏        | 50/426 [00:33<03:32,  1.77it/s]
+Loading weights:  12%|█▏        | 52/426 [00:34<03:20,  1.86it/s]
+Loading weights:  12%|█▏        | 53/426 [00:36<04:55,  1.26it/s]
+Loading weights:  13%|█▎        | 55/426 [00:36<03:59,  1.55it/s]
+Loading weights:  13%|█▎        | 56/426 [00:38<05:35,  1.10it/s]
+Loading weights:  14%|█▍        | 61/426 [00:39<02:54,  2.09it/s]
+Loading weights:  15%|█▍        | 62/426 [00:40<03:27,  1.75it/s]
+Loading weights:  15%|█▌        | 65/426 [00:41<02:31,  2.38it/s]
+Loading weights:  15%|█▌        | 66/426 [00:42<03:09,  1.90it/s]
+Loading weights:  16%|█▌        | 68/426 [00:43<02:41,  2.21it/s]
+Loading weights:  16%|█▌        | 69/426 [00:43<02:39,  2.24it/s]
+Loading weights:  16%|█▋        | 70/426 [00:44<02:42,  2.19it/s]
+Loading weights:  18%|█▊        | 76/426 [00:46<02:36,  2.24it/s]
+Loading weights:  18%|█▊        | 78/426 [00:48<03:24,  1.70it/s]
+Loading weights:  19%|█▊        | 79/426 [00:49<03:22,  1.72it/s]
+Loading weights:  19%|█▉        | 80/426 [00:50<03:37,  1.59it/s]
+Loading weights:  19%|█▉        | 81/426 [00:50<03:06,  1.85it/s]
+Loading weights:  19%|█▉        | 82/426 [00:50<03:05,  1.85it/s]
+Loading weights:  19%|█▉        | 83/426 [00:52<03:48,  1.50it/s]
+Loading weights:  20%|█▉        | 84/426 [00:53<05:13,  1.09it/s]
+Loading weights:  20%|██        | 86/426 [00:54<03:57,  1.43it/s]
+Loading weights:  21%|██        | 88/426 [00:55<03:36,  1.56it/s]
+Loading weights:  21%|██        | 89/426 [00:57<04:45,  1.18it/s]
+Loading weights:  21%|██▏       | 91/426 [00:59<05:45,  1.03s/it]
+Loading weights:  22%|██▏       | 93/426 [01:04<07:54,  1.43s/it]
+Loading weights:  22%|██▏       | 94/426 [01:04<06:36,  1.19s/it]
+Loading weights:  22%|██▏       | 95/426 [01:04<05:47,  1.05s/it]
+Loading weights:  23%|██▎       | 97/426 [01:05<04:23,  1.25it/s]
+Loading weights:  23%|██▎       | 98/426 [01:07<05:36,  1.03s/it]
+Loading weights:  23%|██▎       | 99/426 [01:08<04:59,  1.09it/s]
+Loading weights:  24%|██▎       | 101/426 [01:09<04:38,  1.17it/s]
+Loading weights:  24%|██▍       | 103/426 [01:10<03:36,  1.49it/s]
+Loading weights:  25%|██▌       | 107/426 [01:11<02:08,  2.49it/s]
+Loading weights:  25%|██▌       | 108/426 [01:13<03:31,  1.51it/s]
+Loading weights:  26%|██▌       | 109/426 [01:14<04:26,  1.19it/s]
+Loading weights:  26%|██▋       | 112/426 [01:16<03:27,  1.52it/s]
+Loading weights:  27%|██▋       | 113/426 [01:17<04:16,  1.22it/s]
+Loading weights:  27%|██▋       | 115/426 [01:18<03:13,  1.60it/s]
+Loading weights:  28%|██▊       | 120/426 [01:18<01:56,  2.63it/s]
+Loading weights:  28%|██▊       | 121/426 [01:21<03:12,  1.59it/s]
+Loading weights:  29%|██▊       | 122/426 [01:23<04:16,  1.19it/s]
+Loading weights:  29%|██▉       | 123/426 [01:23<03:41,  1.37it/s]
+Loading weights:  29%|██▉       | 125/426 [01:25<04:21,  1.15it/s]
+Loading weights:  30%|██▉       | 126/426 [01:28<06:25,  1.28s/it]
+Loading weights:  30%|██▉       | 127/426 [01:29<06:09,  1.24s/it]
+Loading weights:  52%|█████▏    | 222/426 [01:29<00:08, 24.03it/s]
+Loading weights:  83%|████████▎ | 354/426 [01:30<00:01, 62.22it/s]
+Loading weights: 100%|██████████| 426/426 [01:30<00:00,  4.72it/s]
 llama-server on 127.0.0.1:8090
-Traceback (most recent call last):
-  File "D:\WeightSpace\experiments\003-scale\run_eval.py", line 16, in <module>
-    summ, _ = s.generate(probs, purpose=f"4B EVAL {label} seed {seed}", hypothesis="edit > base per problem",
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\WeightSpace\experiments\003-scale\..\001-claude-editor\ws.py", line 198, in generate
-    outs = srv.generate(self.prompts(problems), max_new_tokens, seed, SAMPLING)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\WeightSpace\experiments\003-scale\..\001-claude-editor\gen.py", line 71, in generate
-    return list(ex.map(lambda ip: self._one(ip[1], cap, seed + ip[0], sampling), enumerate(prompts)))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 619, in result_iterator
-    yield _result_or_cancel(fs.pop())
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 317, in _result_or_cancel
-    return fut.result(timeout)
-           ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 456, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
-    raise self._exception
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\WeightSpace\experiments\003-scale\..\001-claude-editor\gen.py", line 71, in <lambda>
-    return list(ex.map(lambda ip: self._one(ip[1], cap, seed + ip[0], sampling), enumerate(prompts)))
-                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\WeightSpace\experiments\003-scale\..\001-claude-editor\gen.py", line 66, in _one
-    r = json.load(urllib.request.urlopen(req, timeout=7200))
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 519, in open
-    response = self._open(req, data)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 536, in _open
-    result = self._call_chain(self.handle_open, protocol, protocol +
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 496, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 1377, in http_open
-    return self.do_open(http.client.HTTPConnection, req)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 1352, in do_open
-    r = h.getresponse()
-        ^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1395, in getresponse
-    response.begin()
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 325, in begin
-    version, status, reason = self._read_status()
-                              ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 286, in _read_status
-    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-TimeoutError: timed out
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+eval_base_s0 {'acc': 0.78125, 'cut': 0.21875, 'mean_tok': 7801.21875, 'mean_rep': 0.009093750000000003, 'seconds': 9456, 'n': 64}
+llama-server on 127.0.0.1:8090
+eval_base_s1000 {'acc': 0.796875, 'cut': 0.203125, 'mean_tok': 7395.765625, 'mean_rep': 0.012265625000000006, 'seconds': 10909, 'n': 64}

@@ -127,13 +127,15 @@ def calls_used():
 
 
 class Session:
-    def __init__(self, model_id, dtype=torch.bfloat16, budgeted=True):
+    def __init__(self, model_id, dtype=torch.bfloat16, budgeted=True, device="cuda"):
+        """device="cpu" for generate-only sessions: torch then never holds VRAM next to llama-server
+        (Exp 003: a CUDA-touched process kept 2.1 GiB after .cpu(), spilling the 4B server, ~45 vs ~80 tok/s)."""
         from transformers import AutoModelForCausalLM, AutoTokenizer
         self.model_id, self.budgeted, self.edits = model_id, budgeted, []
         local = HERE.parent.parent / "models" / model_id.split("/")[-1]
         src = str(local) if local.exists() else model_id
         self.tok = AutoTokenizer.from_pretrained(src, padding_side="left")
-        self.model = AutoModelForCausalLM.from_pretrained(src, dtype=dtype).cuda().eval()
+        self.model = AutoModelForCausalLM.from_pretrained(src, dtype=dtype).to(device).eval()
 
     # editing: an edit file defines edit(model); it must touch only transformer-block params
     def apply(self, path):
@@ -192,12 +194,15 @@ class Session:
         call_no = self._spend("generate", purpose, hypothesis, len(problems))
         path = self.gguf()
         t0, rows = time.time(), []
-        self.model.cpu(); torch.cuda.empty_cache()  # free VRAM for llama-server (4B: weights twice don't fit in 16 GB)
+        on_gpu = self.model.device.type == "cuda"
+        if on_gpu:
+            self.model.cpu(); torch.cuda.empty_cache()  # free VRAM for llama-server (4B: weights twice don't fit in 16 GB)
         try:
             with gen.Server(path, parallel=min(parallel, len(problems)), cap=max_new_tokens) as srv:
                 outs = srv.generate(self.prompts(problems), max_new_tokens, seed, SAMPLING)
         finally:
-            self.model.cuda()
+            if on_gpu:
+                self.model.cuda()
         for p, (text, ids, stop) in zip(problems, outs):
             rows.append({"id": p["id"], "gold": p["answer"], "n_tok": len(ids), "stop": stop,
                          "cut": stop == "limit" or len(ids) >= max_new_tokens,
@@ -236,7 +241,7 @@ class Session:
         lps = []
         try:
             for t in texts:
-                ids = self.tok(t, return_tensors="pt").input_ids.cuda()
+                ids = self.tok(t, return_tensors="pt").input_ids.to(self.model.device)
                 logits = self.model(ids).logits.float()
                 lp = torch.log_softmax(logits[0, :-1], -1).gather(1, ids[0, 1:, None])[:, 0]
                 lps.append(lp.cpu())

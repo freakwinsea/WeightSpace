@@ -48,3 +48,6 @@ For each problem, net = (edit correct over 2 draws) − (base correct over 2 dra
   - **Fix:** the per-request timeout was raised to 12 h. Nothing else changed: same 8 slots, f16 KV, sampling and problems.
   - `calls/eval_edit_s0.json` is kept. Base seeds 0 and 1000 and edit seed 1000 are rerun.
   - No eval file was opened or scored. The only figures seen were the progress lines' summary accuracy for edit seed 0 and the calibration call.
+- 2026-11-15, **after the eval, scored once** with `score.py`: primary 7 / 2, p = 0.18, not confirmed (see REPORT.md).
+  - The GPU watcher showed the base eval process holding 2.1 GiB of VRAM during generation (llama-server spilled 1.4 GiB, about 45 vs 80 tok/s). That affects speed only: the sampled tokens don't depend on it.
+  - After scoring, `ws.Session` gained `device="cpu"` for generate-only sessions, and `run_eval.py` now uses it. This applies to future runs only.

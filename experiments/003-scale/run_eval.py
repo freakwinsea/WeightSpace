@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 import ws
 
 label, *edits = sys.argv[1:]
-s = ws.Session("Qwen/Qwen3.5-4B")
+s = ws.Session("Qwen/Qwen3.5-4B", device="cpu")  # generate-only: keep torch off the GPU
 for e in edits:
     print("edit", s.apply(e)["n"], "weights", flush=True)
 probs = ws.math_train(64, seed=3)
