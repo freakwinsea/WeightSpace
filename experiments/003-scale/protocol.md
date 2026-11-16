@@ -51,3 +51,12 @@ For each problem, net = (edit correct over 2 draws) − (base correct over 2 dra
 - 2026-11-15, **after the eval, scored once** with `score.py`: primary 7 / 2, p = 0.18, not confirmed (see REPORT.md).
   - The GPU watcher showed the base eval process holding 2.1 GiB of VRAM during generation (llama-server spilled 1.4 GiB, about 45 vs 80 tok/s). That affects speed only: the sampled tokens don't depend on it.
   - After scoring, `ws.Session` gained `device="cpu"` for generate-only sessions, and `run_eval.py` now uses it. This applies to future runs only.
+
+## Calibration on harder problems (written 2026-11-15, before either call)
+The eval was near ceiling (53 of 64 problems solved by both arms on both seeds), so it couldn't decide the question. This calibration sizes a definitive test; **it is not a test of the edit**, and it gets no significance test.
+- **Problems:** 32 MATH-train Level 5 problems: the seed-6 shuffle, excluding call 1's and the eval's problems and empty golds (`run_calib.py`).
+- **Calls 7–8:** base, then the recipe edit, both at seed 0, 16k cap and 8 slots, with torch on the CPU (`device="cpu"`; the first full run on that path).
+- **Measures:** base cap rate, finished-answer accuracy, draw discordance d1 (the share of problems where exactly one arm is correct), and the edit's split on those problems.
+- **Sizing rule, fixed now:** the definitive test is base vs edit on fresh Level 5 problems × 2 seeds, with the same primary endpoint as above. Its n is chosen for about 40 discordant problems, which gives roughly 80% power at a 7 : 2 split: n = ceil(40 / d2), where d2 = 1 − (1 − d1)², capped at 64 per call.
+  - If base finishes fewer than 25% of problems (floor) or more than 75% (ceiling), Level 5 is the wrong band, and I report that instead of sizing.
+- **Prediction:** base caps about half the time, d1 ≈ 0.15–0.25, and finished answers stay ≥ 90% correct.
