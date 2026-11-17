@@ -4,7 +4,7 @@
 
 Everything ran on one consumer GPU (AMD RX 9060 XT, 16 GB) with llama.cpp and a small Python harness. No cluster and no training pipeline. This repo has the code, every forward call, the pre-registrations and change logs, and the dead ends, so you can check the results or run your own.
 
-The released checkpoint (the 2B edit) is on Hugging Face: `<hf-user>/Qwen3.5-2B-doubt-edit`. Its model card is [`release/qwen3.5-2b-doubt-edit/README.md`](release/qwen3.5-2b-doubt-edit/README.md).
+The released checkpoint (the 2B edit) is on Hugging Face: [Freakwinsea/Qwen3.5-2B-doubt-edit](https://huggingface.co/Freakwinsea/Qwen3.5-2B-doubt-edit). Its model card is [`release/qwen3.5-2b-doubt-edit/README.md`](release/qwen3.5-2b-doubt-edit/README.md).
 
 ## Results
 | Exp | Question | Result | Write-up |
