@@ -77,4 +77,4 @@ The eval was near ceiling (53 of 64 problems solved by both arms on both seeds),
   - Not a test: the 3 : 2 split is noted only as a warning that the true effect at Level 5 may be smaller than the 7 : 2 this test is sized for.
 - 2026-11-17, **definitive test scored once** with `score_final.py`: primary 16 / 12, p = 0.57, not confirmed.
   - All 12 calls completed with no crash and no reruns.
-  - The first scoring attempt crashed on a script bug before printing any definitive-test number: the `b` escape in the `boxed{` search left the exploratory list empty. It was fixed and rerun, so the primary was computed and seen once. The data and the primary computation were unchanged.
+  - The first scoring attempt crashed on a script bug before printing any definitive-test number: the backslash-b escape in the boxed-answer search left the exploratory list empty. It was fixed and rerun, so the primary was computed and seen once. The data and the primary computation were unchanged.
