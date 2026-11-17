@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: quiet-run-health-check
+expected_outcome: |
+  An ordered, concrete health check (server log age and decode rate, call file timestamps, process and GPU memory per process, expected call duration) with how to read each result, and no killing or restarting before the evidence says it is hung.

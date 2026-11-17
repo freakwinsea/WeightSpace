@@ -6,3 +6,4 @@ tools/
 data/
 __pycache__/
 release/out/
+skills/*-workspace/

@@ -61,6 +61,17 @@ On 2B this was applied to layers 15, 16 and 18. The search that found this edit 
 
 Generation runs through llama-server (Vulkan, bf16 GGUF). The torch model is only used to measure activations and to compute the edit. `ws.Session(..., device="cpu")` keeps torch off the GPU during generation.
 
+## Run your own experiment with Claude
+[`skills/weight-space-editing/`](skills/weight-space-editing/SKILL.md) is a Claude skill distilled from these experiments. It onboards Claude to the whole loop:
+- setting up the workbench (llama-server plus a torch harness on one GPU, VRAM rules, timeouts, crash-safe runs)
+- the budget, pre-registration and score-once discipline
+- the edit recipe
+- every lesson and pitfall from Exp 001–003
+
+To use it with Claude Code, copy the folder to `~/.claude/skills/` (or to `.claude/skills/` in your project) and ask Claude to set up a weight-space editing experiment.
+
+Its test cases are in `skills/weight-space-editing/evals/`. In a first test, three tasks were run with and without the skill. Both versions passed all 19 checks, because the baseline could read this repo, whose records teach the same discipline. The skill still caught pitfalls the baseline missed, such as reading accuracy from a run's log before the one-time scoring. Testing from a clean folder, without this repo's history, is still to do.
+
 ## Layout
 - `experiments/NNN-*/`: per experiment, `protocol.md` (pre-registration and change log), `REPORT.md`, `log.jsonl` (every budgeted call), `calls/` (raw outputs, including full generated texts), `edits/`, and the runners.
 - `experiments/001-claude-editor/ws.py`, `gen.py`: the harness (budget, logging, grading, llama-server).

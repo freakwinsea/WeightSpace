@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: code-experiment-protocol
+expected_outcome: |
+  A protocol.md written before any forward call: question, contamination, procedure with problem sets and caps, the edit fixed in advance, a paired primary endpoint with a decision rule, predictions, budget and a change log; no model is run.

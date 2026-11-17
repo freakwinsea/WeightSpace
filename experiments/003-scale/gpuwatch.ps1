@@ -1,6 +1,8 @@
 # Every 10 min: aggregate decode speed on llama-server and per-process GPU memory -> gpuwatch.log. Diagnostic only.
-$log = 'D:\WeightSpace\experiments\003-scale\gpuwatch.log'
-function Decoded { try { $s = Invoke-RestMethod http://127.0.0.1:8090/slots -TimeoutSec 5; ($s | ForEach-Object { $n = $_.next_token; if ($n -is [array]) { $n = $n[0] }; [int]$n.n_decoded } | Measure-Object -Sum).Sum } catch { $null } }
+# Pass the port the runner printed ("llama-server on 127.0.0.1:<port>"): the server walks forward when 8090 is busy.
+param([int]$Port = 8090, [string]$Log = "$PSScriptRoot\gpuwatch.log")
+$log = $Log
+function Decoded { try { $s = Invoke-RestMethod "http://127.0.0.1:$Port/slots" -TimeoutSec 5; ($s | ForEach-Object { $n = $_.next_token; if ($n -is [array]) { $n = $n[0] }; [int]$n.n_decoded } | Measure-Object -Sum).Sum } catch { $null } }
 while ($true) {
   $a = Decoded; Start-Sleep 60; $b = Decoded
   $rate = if ($a -ne $null -and $b -ne $null -and $b -ge $a) { [int](($b - $a) / 60) } else { 'n/a' }
