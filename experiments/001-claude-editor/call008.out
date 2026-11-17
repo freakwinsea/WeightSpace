@@ -32,18 +32,18 @@ Traceback (most recent call last):
   File "D:\WeightSpace\experiments\001-claude-editor\gen.py", line 71, in generate
     return list(ex.map(lambda ip: self._one(ip[1], cap, seed + ip[0], sampling), enumerate(prompts)))
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 619, in result_iterator
+  File "<python>\Lib\concurrent\futures\_base.py", line 619, in result_iterator
     yield _result_or_cancel(fs.pop())
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 317, in _result_or_cancel
+  File "<python>\Lib\concurrent\futures\_base.py", line 317, in _result_or_cancel
     return fut.result(timeout)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+  File "<python>\Lib\concurrent\futures\_base.py", line 449, in result
     return self.__get_result()
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+  File "<python>\Lib\concurrent\futures\_base.py", line 401, in __get_result
     raise self._exception
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+  File "<python>\Lib\concurrent\futures\thread.py", line 58, in run
     result = self.fn(*self.args, **self.kwargs)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "D:\WeightSpace\experiments\001-claude-editor\gen.py", line 71, in <lambda>
@@ -52,21 +52,21 @@ Traceback (most recent call last):
   File "D:\WeightSpace\experiments\001-claude-editor\gen.py", line 66, in _one
     r = json.load(urllib.request.urlopen(req, timeout=7200))
                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 216, in urlopen
+  File "<python>\Lib\urllib\request.py", line 216, in urlopen
     return opener.open(url, data, timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 525, in open
+  File "<python>\Lib\urllib\request.py", line 525, in open
     response = meth(req, response)
                ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 634, in http_response
+  File "<python>\Lib\urllib\request.py", line 634, in http_response
     response = self.parent.error(
                ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 563, in error
+  File "<python>\Lib\urllib\request.py", line 563, in error
     return self._call_chain(*args)
            ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 496, in _call_chain
+  File "<python>\Lib\urllib\request.py", line 496, in _call_chain
     result = func(*args)
              ^^^^^^^^^^^
-  File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 643, in http_error_default
+  File "<python>\Lib\urllib\request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 500: Internal Server Error

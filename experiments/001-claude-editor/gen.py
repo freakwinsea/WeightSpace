@@ -8,8 +8,9 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-LLAMA = Path(os.environ["LOCALAPPDATA"]) / "Microsoft/WinGet/Packages/ggml.llamacpp_Microsoft.Winget.Source_8wekyb3d8bbwe/llama-server.exe"
-CONVERT = ROOT / "tools/llama-convert/convert_hf_to_gguf.py"
+LLAMA = Path(os.environ.get("LLAMA_SERVER") or shutil.which("llama-server") or Path(os.environ.get("LOCALAPPDATA", "."))
+             / "Microsoft/WinGet/Packages/ggml.llamacpp_Microsoft.Winget.Source_8wekyb3d8bbwe/llama-server.exe")
+CONVERT = Path(os.environ.get("LLAMA_CONVERT") or ROOT / "tools/llama-convert/convert_hf_to_gguf.py")
 DEFAULT_PORT = int(os.environ.get("LLAMA_PORT", 8090))
 
 

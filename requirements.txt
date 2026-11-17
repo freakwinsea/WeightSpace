@@ -1,0 +1,11 @@
+# Versions used for every result in this repo (Windows 11, Python 3.11). torch was the ROCm build for an AMD GPU;
+# any CUDA/ROCm torch 2.x should do for the editing side, which is small. Generation runs in llama.cpp, not torch.
+torch==2.14.0
+transformers==5.22.2
+safetensors==0.8.0
+accelerate==1.15.0
+math-verify==0.9.0
+datasets==5.2.0
+numpy==2.4.6
+pandas==3.1.1
+pyarrow==26.0.1
