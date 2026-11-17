@@ -75,3 +75,6 @@ The eval was near ceiling (53 of 64 problems solved by both arms on both seeds),
   - Base finished 15/32 (47%, in band), all 15 correct. The edit finished 16/32, all correct. Looping was 0 in both arms.
   - d1 = 5/32, split 3 : 2 for the edit. The rule gives **n = 139**, in 3 chunks (12 calls).
   - Not a test: the 3 : 2 split is noted only as a warning that the true effect at Level 5 may be smaller than the 7 : 2 this test is sized for.
+- 2026-11-17, **definitive test scored once** with `score_final.py`: primary 16 / 12, p = 0.57, not confirmed.
+  - All 12 calls completed with no crash and no reruns.
+  - The first scoring attempt died on a script bug: the `\b` escape in the `\boxed{` search crashed the exploratory metric only, after the primary had printed. It was fixed and rerun; the data and the primary computation were unchanged.
